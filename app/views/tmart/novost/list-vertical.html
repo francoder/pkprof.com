@@ -1,0 +1,17 @@
+<check if="!empty(@list)">
+<section class="htc__blog__area bg__white">
+    <div class="news">
+        <h3 class="news-title">&#187; Новости</h3>
+<check if="!empty(@list)">
+                    <repeat group="{{ @list }}" value="{{ @list_node }}">
+                        <div class="news-item">
+<p class="news-date">{{ date('d.m.y',strtotime(@list_node.af_date)) }}</p>
+                        {~ \bs_imgtag(@list_node, 'img', 'cropEnlarge', 250, 100) ~}
+                        <h4><a class="news-link" href="{{ @list_node._link }}">{{ @list_node.title }}</a></h4>
+                        </div>
+                    </repeat>
+    </div>
+</check>
+
+</section>
+</check>

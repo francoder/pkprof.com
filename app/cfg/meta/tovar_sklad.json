@@ -1,0 +1,144 @@
+{
+    "namespace": "tovar_sklad",
+    "acl": "tovar_sklad",
+    "aliases": {
+        "list": "backend_content_list",
+        "list_page": "backend_content_list_page",
+        "create": "backend_content_create",
+        "delete": "backend_content_delete",
+        "edit": "backend_content_edit",
+        "update": "backend_content_update",
+        "value": "backend_content_value",
+        "labels": "backend_content_labels",
+        "sort": "backend_content_sort",
+        "move": "backend_content_move",
+        "tree_json": "backend_content_tree_json",
+        "upload": "backend_content_upload"
+    },
+    "items_aliases": {
+        "create": "backend_content_item_create",
+        "delete": "backend_content_item_delete",
+        "update": "backend_content_item_update",
+        "sort": "backend_content_item_sort",
+        "value": "backend_content_item_value",
+        "upload": "backend_content_item_upload",
+        "uploader_post": "backend_content_item_uploader_post",
+        "one": "backend_content_item_one"
+    },
+    "view": {
+        "list_fields": "admin\/content\/fields_in_list.html",
+        "list": "admin\/content\/list.html",
+        "list_header": "admin\/content\/head.html",
+        "list_footer": "admin\/content\/footer.html",
+        "list_form": "admin\/content\/list_form.html",
+        "list_item": "admin\/content\/list_item.html",
+        "list_empty": "admin\/content\/list_empty.html",
+        "one": null,
+        "form": "admin\/content\/form.html",
+        "edit": "admin\/content\/edit.html",
+        "labels": "system\/content\/labels.html",
+        "moderation_controls": "system\/content\/moderation.html",
+        "edit_item": "system\/content\/item\/list_item.html",
+        "hide_node_link": true,
+        "perpage": 10,
+        "icon": "fa fa-list fa-fw",
+        "form_struct": null
+    },
+    "fields_in_list": [
+        "cat_tovar",
+        "af_datetime",
+        "af_count"
+    ],
+    "texts": {
+        "ru": {
+            "title": "Товарный остаток",
+            "title_pl": "Товарные остатки"
+        }
+    },
+    "items": [],
+    "fields": {
+        "id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "id",
+            "fullname": "id",
+            "type": null,
+            "data_type": "int(11)"
+        },
+        "user_id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "user_id",
+            "fullname": "user_id",
+            "type": null,
+            "data_type": "int(11)"
+        },
+        "created": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "created",
+            "fullname": "created",
+            "type": null,
+            "data_type": "timestamp"
+        },
+        "edited": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "edited",
+            "fullname": "edited",
+            "type": null,
+            "data_type": "tinyint(1)"
+        },
+        "fko_tovar": {
+            "is_additional": false,
+            "foreign_key": true,
+            "name": "tovar",
+            "fullname": "fko_tovar",
+            "type": "int",
+            "data_type": "int(11)"
+        },
+        "af_datetime": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "datetime",
+            "fullname": "af_datetime",
+            "type": "textarea",
+            "data_type": "text",
+            "texts": {
+                "ru": {
+                    "label": "Дата и время",
+                    "placeholder": "2018-06-01 14:44"
+                }
+            }
+        },
+        "af_count": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "count",
+            "fullname": "af_count",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Количество (в единицах измерения товара)",
+                    "placeholder": ""
+                }
+            }
+        }
+    },
+    "unique_slug": true,
+    "relations": {
+        "parents": {
+            "tovar_sklad__fko_tovar": {
+                "name": "fko_tovar",
+                "table": "tovar",
+                "num": 1,
+                "texts": {
+                    "ru": {
+                        "label": "Товар"
+                    }
+                }
+            }
+        }
+    }
+}

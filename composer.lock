@@ -1,0 +1,574 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2417a1cc73778762ee9968120ab074e8",
+    "packages": [
+        {
+            "name": "bcosca/fatfree-core",
+            "version": "3.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bcosca/fatfree-core.git",
+                "reference": "4d1a08829b14468c4821c03b9a5f3b6e4bc981e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bcosca/fatfree-core/zipball/4d1a08829b14468c4821c03b9a5f3b6e4bc981e5",
+                "reference": "4d1a08829b14468c4821c03b9a5f3b6e4bc981e5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!",
+            "homepage": "http://fatfreeframework.com/",
+            "time": "2018-04-19T17:35:23+00:00"
+        },
+        {
+            "name": "blueimp/jquery-file-upload",
+            "version": "v9.28.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vkhramtsov/jQuery-File-Upload.git",
+                "reference": "ff5accfe2e5c4a522777faa980a90cf86a636d1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vkhramtsov/jQuery-File-Upload/zipball/ff5accfe2e5c4a522777faa980a90cf86a636d1d",
+                "reference": "ff5accfe2e5c4a522777faa980a90cf86a636d1d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "server/php/UploadHandler.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Tschan",
+                    "homepage": "https://blueimp.net"
+                }
+            ],
+            "description": "File Upload widget for jQuery.",
+            "homepage": "https://github.com/blueimp/jQuery-File-Upload",
+            "keywords": [
+                "bootstrap",
+                "chunk",
+                "cross-domain",
+                "cross-site",
+                "drag",
+                "drop",
+                "file",
+                "gae",
+                "go",
+                "jquery",
+                "multiple",
+                "php",
+                "preview",
+                "progress",
+                "python",
+                "resume",
+                "selection",
+                "upload",
+                "widget"
+            ],
+            "time": "2018-11-13T05:41:39+00:00"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2018-04-22T15:46:56+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20T10:07:11+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "ikkez/f3-assets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ikkez/f3-assets.git",
+                "reference": "82d2c45f6381cbaa3a1edfb01f652bec3c8b9078"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ikkez/f3-assets/zipball/82d2c45f6381cbaa3a1edfb01f652bec3c8b9078",
+                "reference": "82d2c45f6381cbaa3a1edfb01f652bec3c8b9078",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "CSS/JS Assets Plugin for PHP Fat-Free Framework",
+            "homepage": "https://github.com/ikkez/f3-assets",
+            "keywords": [
+                "F3",
+                "JS",
+                "css",
+                "fatfree",
+                "minify"
+            ],
+            "time": "2018-09-13T11:27:43+00:00"
+        },
+        {
+            "name": "ikkez/f3-fal",
+            "version": "v0.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ikkez/f3-fal.git",
+                "reference": "6f89b76cc49548d67c45b9fcc41b2469af537a66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ikkez/f3-fal/zipball/6f89b76cc49548d67c45b9fcc41b2469af537a66",
+                "reference": "6f89b76cc49548d67c45b9fcc41b2469af537a66",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "A file abstraction layer for PHP Fat-Free Framework",
+            "homepage": "https://github.com/ikkez/f3-fal",
+            "keywords": [
+                "F3",
+                "fatfree",
+                "file",
+                "ftp"
+            ],
+            "time": "2017-02-17T13:16:39+00:00"
+        },
+        {
+            "name": "ikkez/f3-pagination",
+            "version": "v1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ikkez/f3-pagination.git",
+                "reference": "099cd47a7b52c827e3d8f33aed977beee4565565"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ikkez/f3-pagination/zipball/099cd47a7b52c827e3d8f33aed977beee4565565",
+                "reference": "099cd47a7b52c827e3d8f33aed977beee4565565",
+                "shasum": ""
+            },
+            "require": {
+                "bcosca/fatfree-core": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "Provides a pagebrowser and some pagination utilities for the PHP Fat-Free Framework",
+            "homepage": "https://github.com/ikkez/f3-pagination",
+            "keywords": [
+                "F3",
+                "fatfree",
+                "pagebrowser",
+                "pagination"
+            ],
+            "time": "2017-12-31T11:49:11+00:00"
+        },
+        {
+            "name": "ikkez/f3-schema-builder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ikkez/f3-schema-builder.git",
+                "reference": "42d8f3f0a117dce29ab3fe30ef46fafb419224e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ikkez/f3-schema-builder/zipball/42d8f3f0a117dce29ab3fe30ef46fafb419224e3",
+                "reference": "42d8f3f0a117dce29ab3fe30ef46fafb419224e3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "SQL Schema Builder Plugin for PHP Fat-Free Framework",
+            "homepage": "https://github.com/ikkez/f3-schema-builder",
+            "keywords": [
+                "F3",
+                "fatfree",
+                "sql"
+            ],
+            "time": "2018-05-15T13:03:21+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2018-07-29T20:33:41+00:00"
+        },
+        {
+            "name": "voronkovich/sberbank-acquiring-client",
+            "version": "v1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voronkovich/sberbank-acquiring-client.git",
+                "reference": "7c0148166b7cb7117a95b16c4b77e58be5e5ade6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voronkovich/sberbank-acquiring-client/zipball/7c0148166b7cb7117a95b16c4b77e58be5e5ade6",
+                "reference": "7c0148166b7cb7117a95b16c4b77e58be5e5ade6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Voronkovich\\SberbankAcquiring\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oleg Voronkovich",
+                    "email": "oleg-voronkovich@yandex.ru"
+                }
+            ],
+            "description": "Client for working with Sberbank's acquiring REST API",
+            "homepage": "https://github.com/voronkovich/sberbank-acquiring-client",
+            "keywords": [
+                "acquiring",
+                "client",
+                "credit card",
+                "sberbank"
+            ],
+            "time": "2017-07-26T08:44:48+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "ikkez/f3-assets": 20,
+        "ikkez/f3-schema-builder": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

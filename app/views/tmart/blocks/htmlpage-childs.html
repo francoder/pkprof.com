@@ -1,0 +1,7 @@
+<check if="{{ !empty(@html.subpages) }}">
+	<ul class="submenu">
+		<repeat group="{{ @html.subpages }}" value="{{@page}}" key="{{@k}}" counter="{{ @ctr }}">
+			<li><a {{ @page.active || @ctr==1 ? 'class="cur"' : '' }} href="{{@k}}" data-id="{{@ctr}}">{{@page.text}}</a></li>
+		</repeat>
+	</ul>
+</check>

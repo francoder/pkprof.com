@@ -1,0 +1,3 @@
+<div class="alert alert-{{ @type=='error'?'danger':@type }}">
+    {{@message|raw}} <div id="alert_{{@type}}_{{ @key }}" data-id="{{ @key }}" data-type="{{ @type }}" type="button" class="close bcl_del" data-dismiss="alert" aria-hidden="true"></div>
+</div>

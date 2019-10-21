@@ -1,0 +1,35 @@
+<include href="system/alerts/block.html"/>
+<!-- Start Feature Product -->
+<section class="categories-slider-area bg__white">
+    <div class="container">
+        <div class="row">
+            <!-- Start Left Feature -->
+            <div class="col-md-9 col-lg-9 col-sm-8 col-xs-12 float-left-style">
+                <include href="{{ @site.tpl.'/banner/slider.html' }}" with="list=@list_banners"/>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 float-right-style">
+                <div class="categories-menu mrg-xs">
+                    <div id="categories" class="category-heading">
+                        <h3>Каталог товаров</h3>
+                    </div>
+<div class="category-menu-list"><ul><repeat group="@MENUS.catalog" value="@item">
+<li><a href="{{ 'frontend_tovar_list', @item | alias }}">{{ @item.title }}</a></li>
+</repeat></ul></div>
+<include href="{{ @site.tpl.'/novost/list-vertical.html' }}" with="list=@list_novosti"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <include href="{{ @site.tpl.'/banner_small/slider.html'}}" with="list=@list_banners_small"/>
+            </div>
+            <div class="col-lg-9">
+                <include href="{{ @site.tpl.'/banner_home/list.html' }}" with="list=@list_banners_home"/>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg__white">
+<include href="{{ @site.tpl.'/disqus/tabs.html' }}"/>
+<include if="0" href="{{ @site.tpl.'/disqus/chat.html' }}"/>
+</section>

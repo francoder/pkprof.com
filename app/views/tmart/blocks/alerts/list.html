@@ -1,0 +1,29 @@
+<check if="{{ isset(@SESSION.messages) && is_array(@SESSION.messages) && !empty(@SESSION.messages) }}">
+    <repeat group="{{ @SESSION.messages }}" value="{{ @messages }}" key="{{ @type }}">
+        <check if="{{ is_array(@messages) }}">
+            <repeat group="{{ @messages }}" value="{{ @message }}" key="{{ @key }}">
+                <check if="{{ !empty(@message) }}">
+                    <include href="{{ @tpl.'/one.html' }}"/>
+                </check>
+            </repeat>
+        </check>
+    </repeat>
+</check>
+<check if="{{isset(@MESSAGES) && is_array(@MESSAGES) && !empty(@MESSAGES) }}">
+    <repeat group="{{@MESSAGES}}" value="{{@msgs}}" key="{{@type}}">
+        <check if="{{ is_array(@msgs) }}">
+            <repeat group="{{@msgs}}" value="{{@message}}" key="{{@key}}">
+                <check if="{{ !empty(@message) }}">
+                    <include href="{{ @tpl.'/one.html' }}"/>
+                </check>
+            </repeat>
+        </check>
+    </repeat>
+</check>
+<script>
+if (typeof $ != 'undefined') {
+    $(document).ready(function () {
+        $("#alerts").trigger('show');
+    });
+}
+</script>

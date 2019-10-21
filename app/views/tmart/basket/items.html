@@ -1,0 +1,33 @@
+<div class="table-responsive">
+<table class="cart-table table table-bordered">
+<thead><tr>
+<th>Фото</th>
+<th>Товар</th>
+<th>Стоимость</th>
+<th>Количество</th>
+<th>Сумма</th>
+<th>&nbsp;</th>
+</tr></thead>
+<tbody>
+<repeat group="{{ @basket.items }}" key="{{ @id }}" value="{{ @item }}">
+<tr class="bs_basket__sku" data-id="{{ @id }}">
+    <td><check if="is_object(@item.info.img) && @item.info.img->exists()"><a href="{{ @item.info._link }}"><img src="{{ @item.info.img->originalRatio(70,70) }}" class="cart-table-img" alt="" height="90" width="90"></a></check></td>
+    <td><a href="{{ @item.info._link }}">{{ @item.info.title }}</a></td>
+<td><span class="amount">{{ @item.price }}р.</span></td>
+<td>
+    <a data-id="{{ @id }}" data-bs-basket-minus><i class="fa fa-minus-circle"></i></a>
+    <input type="text" value="{{ @item.amount }}" name="quantity[{{ @id }}]" data-bs-basket-amount data-id="{{ @id }}" size="5"/>
+    <a data-id="{{ @id }}" data-bs-basket-plus><i class="fa fa-plus-circle"></i></a>
+</td>
+<td><span class="sum">{{ @item.sum }}</span>р.</td>
+<td><a data-bs-basket-del data-id="{{ @id }}" class="bs_basket__del"><i class="fa fa-times"></i></a></td>
+</tr>
+</repeat>
+<tr>
+<td colspan="4" style="text-align: right">Итого:</td>
+<td><span class="total_sum">{{ @basket.sum }}</span>р.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>

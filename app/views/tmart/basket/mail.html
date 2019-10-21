@@ -1,0 +1,37 @@
+<h2>Новый заказ</h2>
+<table width="100%" border="1" cellspacing="0" callpadding="2">
+<thead><tr>
+<th>Фото</th>
+<th>Товар</th>
+<th>Стоимость</th>
+<th>Количество</th>
+<th>Сумма</th>
+</tr></thead>
+<tbody>
+<repeat group="{{ @basket.items }}" key="{{ @id }}" value="{{ @item }}">
+<repeat group="@item.sku" key="@sku_id" value="@sku">
+<tr>
+    <td><check if="@item.info.img->exists()"><a href="{{ @SCHEME }}://{{ @HOST }}{{ 'frontend_product_node', @item.info | alias }}" target="_blank"><img src="{{ @SCHEME }}://{{ @HOST }}{{ @item.info.img->originalRatio(70,70) }}" alt="" height="90" width="90"></a></check></td>
+    <td><a href="{{ @SCHEME }}://{{ @HOST }}{{ 'frontend_product_node', @item.info | alias }}" target="_blank">{{ @item.info.title }}</a><br>({{ @sku.title }})</td>
+    <td>{{ @sku.price }}р.</td>
+    <td>{{ @sku.amount }}</td>
+    <td>{{ @sku.amount*@sku.price }}р.</td>
+</tr>
+</repeat>
+</repeat>
+<tr>
+<td colspan="4" style="text-align: right">Итого:</td>
+<td>{{ @basket.sum }}</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>
+    Имя: {{ @msg.user.title }}<br>
+    Телефон: {{ @msg.user.af_tel }}<br>
+    Почта: {{ @msg.user.email }}<br>
+    Способ оплаты:<br>{{ @msg.payment.title }}<br>
+    Способ доставки:<br>{{ @msg.delivery.delivery }}<br>
+    Адрес:<br>{{ nl2br(strip_tags(@msg.user.af_comment)) | raw }}<br>
+    Комментарий:<br>{{ nl2br(strip_tags(@msg.order.af_comment)) | raw }}<br>
+</p>

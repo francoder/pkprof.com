@@ -1,0 +1,7 @@
+<td>{{ @list_item.created }}</td>
+<td>
+<repeat group="@list_item.basket.items" value="@tovar">
+<a href="{{ 'frontend_content_go', @tovar.info | alias }}" target="_blank" data-toggle="tooltip" title="Откроется в новом окне">{{ @tovar.title }}</a> <code>{{ @tovar.price }} x {{ @tovar.amount }}</code> = <code>{{ @tovar.sum }}</code><br>
+</repeat></td>
+<td>{{ @list_item.basket.sum }}</td>
+<td>{{ nl2br(strip_tags(@list_item.af_contacts)) | raw }}</td>

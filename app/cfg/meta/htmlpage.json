@@ -1,0 +1,341 @@
+{
+    "namespace": "htmlpage",
+    "acl": "htmlpage",
+    "aliases": {
+        "list": "backend_content_list",
+        "list_page": "backend_content_list_page",
+        "create": "backend_content_create",
+        "delete": "backend_content_delete",
+        "edit": "backend_content_edit",
+        "update": "backend_content_update",
+        "value": "backend_content_value",
+        "labels": "backend_content_labels",
+        "move": "backend_content_move",
+        "tree_json": "backend_content_tree_json",
+        "sort": "backend_content_sort",
+        "upload": "backend_content_upload"
+    },
+    "view": {
+        "list_fields": "admin\/content\/fields_in_list.html",
+        "list": "admin\/content\/list.html",
+        "list_header": "admin\/content\/head.html",
+        "list_footer": "admin\/content\/footer.html",
+        "list_form": "admin\/content\/list_form.html",
+        "list_item": "admin\/content\/list_item.html",
+        "list_empty": "admin\/content\/list_empty.html",
+        "one": null,
+        "labels": "system\/content\/labels.html",
+        "moderation_controls": "system\/content\/moderation.html",
+        "form": "admin\/content\/form.html",
+        "edit": "admin\/content\/edit.html",
+        "perpage": 10,
+        "form_struct": [
+            [
+                [
+                    "col-lg-3",
+                    "title"
+                ],
+                [
+                    "col-lg-3",
+                    "af_headtitle"
+                ],
+                [
+                    "col-lg-3",
+                    "af_menu"
+                ],
+                [
+                    "col-lg-3",
+                    "slug"
+                ]
+            ],
+            [
+                [
+                    "col-lg-6",
+                    "af_description"
+                ],
+                [
+                    "col-lg-6",
+                    "af_keywords"
+                ]
+            ],
+            [
+                [
+                    "col-lg-12",
+                    "af_intro"
+                ]
+            ],
+            [
+                [
+                    "col-lg-12",
+                    "af_body"
+                ]
+            ],
+            [
+                [
+                    "col-lg-6",
+                    "af_islist"
+                ],
+                [
+                    "col-lg-6",
+                    "af_islink"
+                ]
+            ],
+            [
+                [
+                    "col-lg-6",
+                    "af_inmenu"
+                ],
+                [
+                    "col-lg-6",
+                    "af_link"
+                ]
+            ]
+        ],
+        "edit_item": "system\/content\/item\/list_item.html",
+        "hide_node_link": true,
+        "icon": "fa fa-sitemap fa-fw"
+    },
+    "fields_in_list": [],
+    "texts": {
+        "ru": {
+            "title": "Страница",
+            "title_pl": "Страницы",
+            "form_title": "Добавить страницу"
+        }
+    },
+    "items": [],
+    "fields": {
+        "id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "id",
+            "fullname": "id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "pid": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "pid",
+            "fullname": "pid",
+            "type": "int",
+            "data_type": "int(11)"
+        },
+        "user_id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "user_id",
+            "fullname": "user_id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "slug": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "slug",
+            "fullname": "slug",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "i18n": {
+                    "label": "content.slug.label",
+                    "placeholder": "content.slug.placeholder",
+                    "hint": "content.tooltip.slug"
+                }
+            }
+        },
+        "title": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "title",
+            "fullname": "title",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "i18n": {
+                    "label": "content.title.label",
+                    "placeholder": "content.title.placeholder",
+                    "hint": "content.tooltip.title"
+                }
+            }
+        },
+        "created": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "created",
+            "fullname": "created",
+            "type": null,
+            "data_type": "timestamp",
+            "texts": null
+        },
+        "published": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "published",
+            "fullname": "published",
+            "type": "checkbox",
+            "data_type": "tinyint(1)",
+            "texts": {
+                "i18n": {
+                    "label": "content.published.label",
+                    "hint": "content.tooltip.published"
+                }
+            }
+        },
+        "deleted": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "deleted",
+            "fullname": "deleted",
+            "type": "checkbox",
+            "data_type": "tinyint(1)"
+        },
+        "sort": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "sort",
+            "fullname": "sort",
+            "type": null,
+            "data_type": "int(11)"
+        },
+        "af_menu": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "menu",
+            "fullname": "af_menu",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Пункт меню"
+                }
+            }
+        },
+        "af_headtitle": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "headtitle",
+            "fullname": "af_headtitle",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "i18n": {
+                    "label": "content.headtitle.label",
+                    "placeholder": "content.headtitle.placeholder"
+                }
+            }
+        },
+        "af_description": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "description",
+            "fullname": "af_description",
+            "type": "textarea",
+            "data_type": "text",
+            "texts": {
+                "ru": {
+                    "label": "Описание для поисковиков"
+                }
+            }
+        },
+        "af_keywords": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "keywords",
+            "fullname": "af_keywords",
+            "type": "textarea",
+            "data_type": "text",
+            "texts": {
+                "ru": {
+                    "label": "Ключевые слова для поисковиков"
+                }
+            }
+        },
+        "af_body": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "body",
+            "fullname": "af_body",
+            "type": "wysiwyg",
+            "data_type": "longtext",
+            "texts": {
+                "ru": {
+                    "label": "Содержимое страницы"
+                }
+            }
+        },
+        "af_inmenu": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "inmenu",
+            "fullname": "af_inmenu",
+            "type": "checkbox",
+            "data_type": "enum('0','1')",
+            "texts": {
+                "ru": {
+                    "label": "Вывод в меню или нет"
+                }
+            }
+        },
+        "af_islist": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "islist",
+            "fullname": "af_islist",
+            "type": "checkbox",
+            "data_type": "enum('0','1')",
+            "texts": {
+                "ru": {
+                    "label": "Выводить список вложенных страниц или нет"
+                }
+            }
+        },
+        "af_islink": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "islink",
+            "fullname": "af_islink",
+            "type": "checkbox",
+            "data_type": "enum('0','1')",
+            "texts": {
+                "ru": {
+                    "label": "Является ссылкой"
+                }
+            }
+        },
+        "af_link": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "link",
+            "fullname": "af_link",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Адрес ссылки, если является ссылкой"
+                }
+            }
+        }
+    },
+    "unique_slug": true,
+    "relations": {
+        "children": [],
+        "children_optional": [],
+        "parents": [],
+        "parents_optional": [],
+        "plural": [],
+        "hidden": []
+    },
+    "items_aliases": {
+        "create": "backend_content_item_create",
+        "delete": "backend_content_item_delete",
+        "update": "backend_content_item_update",
+        "sort": "backend_content_item_sort",
+        "value": "backend_content_item_value",
+        "upload": "backend_content_item_upload",
+        "uploader_post": "backend_content_item_uploader_post",
+        "one": "backend_content_item_one"
+    }
+}

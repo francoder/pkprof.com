@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{ @i18n.locale }}">
+<head>
+<include href="default/head-meta.html"/>
+<include href="{{ @site['tpl'].'/blocks/head-libs.html' }}"/>
+<include href="{{ @site['tpl'].'/blocks/scripts.html' }}"/>
+    <link type="text/css" rel="stylesheet" href="//cdn.kassy.ru/widget/wrap_widget.css?ver=2">
+    <script src="//cdn.kassy.ru/widget/wrap_widget.js?ver=2"></script>
+</head>
+
+<body>
+<check if="isset(@site.settings.metrika)">{{ @site.settings.metrika | raw }}</check>
+<!-- Body main wrapper start -->
+<div class="wrapper fixed__footer">
+<div class="body__overlay"></div>
+<include href="{{ @site['tpl'].'/blocks/header.html' }}"/>
+<include href="{{ @site['tpl'].'/blocks/offset.html' }}"/>
+<include href="{{ @site['tpl'].'/pages/'.@page_layout.'.html' }}"/>
+<include href="{{ @site['tpl'].'/blocks/footer.html' }}"/>
+
+</div>
+<!-- Body main wrapper end -->
+<check if="{{ DEBUG < 3 && !empty(@site.settings.last) }}">{{ @site.settings.last | raw }}</check>
+</body>
+</html>

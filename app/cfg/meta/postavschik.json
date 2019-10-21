@@ -1,0 +1,170 @@
+{
+    "namespace": "postavschik",
+    "acl": "postavschik",
+    "aliases": {
+        "list": "backend_content_list",
+        "list_page": "backend_content_list_page",
+        "create": "backend_content_create",
+        "delete": "backend_content_delete",
+        "edit": "backend_content_edit",
+        "update": "backend_content_update",
+        "value": "backend_content_value",
+        "labels": "backend_content_labels",
+        "move": "backend_content_move",
+        "rights": "backend_content_rights",
+        "upload": "backend_content_upload",
+        "sort": "backend_content_sort",
+        "tree_json": "backend_content_tree_json"
+    },
+    "view": {
+        "list_fields": "admin\/content\/fields_in_list.html",
+        "list": "admin\/content\/list.html",
+        "list_header": "admin\/content\/head.html",
+        "list_footer": "admin\/content\/footer.html",
+        "list_form": "admin\/content\/list_form.html",
+        "list_item": "admin\/content\/list_item.html",
+        "list_empty": "admin\/content\/list_empty.html",
+        "one": null,
+        "form": "admin\/content\/form.html",
+        "edit": "admin\/content\/edit.html",
+        "labels": "system\/content\/labels.html",
+        "moderation_controls": "system\/content\/moderation.html",
+        "perpage": 10,
+        "form_struct": null,
+        "edit_item": "system\/content\/item\/list_item.html",
+        "hide_node_link": true,
+        "icon": "fa fa-warehouse fa-fw"
+    },
+    "fields_in_list": [],
+    "texts": {
+        "ru": {
+            "title": "Поставщик",
+            "title_pl": "Поставщики",
+            "form_title": "Добавить поставщика"
+        }
+    },
+    "items": [],
+    "fields": {
+        "id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "id",
+            "fullname": "id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "user_id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "user_id",
+            "fullname": "user_id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "created": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "created",
+            "fullname": "created",
+            "type": null,
+            "data_type": "timestamp",
+            "texts": null
+        },
+        "edited": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "edited",
+            "fullname": "edited",
+            "type": null,
+            "data_type": "tinyint(1)",
+            "texts": null
+        },
+        "title": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "title",
+            "fullname": "title",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "i18n": {
+                    "label": "content.title.label",
+                    "placeholder": "content.title.placeholder",
+                    "hint": "content.tooltip.title"
+                },
+                "ru": {
+                    "label": "Название организации",
+                    "placeholder": " "
+                }
+            }
+        },
+        "af_rekv": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "rekv",
+            "fullname": "af_rekv",
+            "type": "textarea",
+            "data_type": "text",
+            "texts": {
+                "ru": {
+                    "label": "Реквизиты",
+                    "placeholder": ""
+                }
+            }
+        },
+        "af_info": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "info",
+            "fullname": "af_info",
+            "type": "wysiwyg",
+            "data_type": "longtext",
+            "texts": {
+                "ru": {
+                    "label": "Описание",
+                    "placeholder": ""
+                }
+            }
+        }
+    },
+    "unique_slug": true,
+    "relations": {
+        "children": {
+            "opt__fko_postavschik": {
+                "table": "opt",
+                "name": "fko_postavschik",
+                "texts": {
+                    "ru": {
+                        "label": "Оптовые предложения"
+                    }
+                }
+            },
+            "tovar__fko_postavschik": {
+                "table": "tovar",
+                "name": "fko_postavschik",
+                "texts": {
+                    "ru": {
+                        "label": "Товары"
+                    }
+                }
+            }
+        },
+        "children_optional": [],
+        "parents": [],
+        "parents_optional": [],
+        "plural": [],
+        "hidden": []
+    },
+    "items_aliases": {
+        "create": "backend_content_item_create",
+        "delete": "backend_content_item_delete",
+        "update": "backend_content_item_update",
+        "sort": "backend_content_item_sort",
+        "value": "backend_content_item_value",
+        "upload": "backend_content_item_upload",
+        "uploader_post": "backend_content_item_uploader_post",
+        "one": "backend_content_item_one"
+    }
+}

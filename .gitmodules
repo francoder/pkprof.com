@@ -1,0 +1,4 @@
+[submodule "vendor/bigsiter/bigsiter-cms-core"]
+	path = vendor/bigsiter/bigsiter-cms-core
+	url = https://bitbucket.org/ivandomashkin/bigsiter-cms.git
+	branch = composer

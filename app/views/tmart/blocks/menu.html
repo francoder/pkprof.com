@@ -1,0 +1,24 @@
+<!-- Start Mainmenu Ares -->
+<nav class="mainmenu__nav hidden-xs hidden-sm">
+    <ul class="main__menu">
+<repeat group="{{ @MENUS.main }}" key="{{ @href }}" value="{{ @anchor }}">
+<check if="is_array(@anchor.childs)">
+<true><li class="drop"><a href="{{ @href }}">{{ @anchor.text }}</a>
+<ul class="dropdown"><repeat group="@anchor.childs" key="@href2" value="@anchor2">
+<li><a href="{{ @href2 }}">{{ @anchor2.text }}</a></li>
+</repeat></ul>
+</li></true>
+<false><li><a href="{{ @href }}" {{ @anchor.active ? 'class="active"' : '' }}>{{ @anchor.text }}</a></li></false>
+</check>
+</repeat>
+    </ul>
+</nav>
+<div class="mobile-menu clearfix visible-xs visible-sm">
+    <nav id="mobile_dropdown">
+        <ul>
+            <repeat group="{{ @MENUS.main }}" key="{{ @href }}" value="{{ @anchor }}">
+                <li><a href="{{ @href }}" {{ @anchor.active ? 'class="active"' : '' }}>{{  @anchor.text }}</a></li>
+            </repeat>
+        </ul>
+    </nav>
+</div>  

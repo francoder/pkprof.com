@@ -1,0 +1,28 @@
+<header id="header" class="htc-header header--3 bg__white">
+<div id="sticky-header-with-topbar" class="mainmenu__area sticky__header">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-lg-2 col-sm-3 col-xs-3">
+<div class="logo">
+<a href="/"><img src="/images/logo/logo.png" alt="ПК &laquo;Профсоюзный&raquo;"></a>
+</div>
+<div class="logo logo-2">
+<img src="/images/logo/zol-seredina.png" alt="&laquo;Золотая Середина&raquo;">
+</div>
+</div>
+<div class="col-md-8 col-lg-8 col-sm-6 col-xs-6">
+<div class="slogan">Информационный Центр <span> Профсоюзный</span></div>
+<include href="{{ @site['tpl'].'/blocks/menu.html' }}"/>                        
+</div>
+<div class="col-md-2 col-sm-4 col-xs-3">  
+<ul class="menu-extra">
+<li class="search search__open hidden-xs"><span class="ti-search"></span></li>
+<li><a href="{{ isset(@account.user)?'/'.@account.user.account_uri:'/login' }}"><span class="ti-user"></span></a></li>
+<li class="cart__menu"><span class="ti-shopping-cart{{@basket.count>0?' hl_basket':''}}" id="bs_basket__count">{{ @basket.count > 0?@basket.count:'' }}</span></li>
+{*<li class="toggle__menu hidden-xs hidden-sm"><span class="ti-menu"></span></li>*}
+</ul>
+</div>
+</div>
+<div class="mobile-menu-area"></div>
+</div></div>
+</header>

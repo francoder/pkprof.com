@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="45d01c07-36c7-4dfe-90c0-d58dcd5e7332" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/AppOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/AppOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/front/AppKassy.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-119">
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/AppOrder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ti-shopping-cart</find>
+      <find>slogan</find>
+      <find>.menu-extra</find>
+      <find>list_filter</find>
+      <find>disc</find>
+      <find>discovery-post-header</find>
+      <find>discovery</find>
+      <find>init</find>
+      <find>token</find>
+      <find>product foo</find>
+      <find>#scrollUp</find>
+      <find>{%</find>
+      <find>{% foreach</find>
+      <find>cropEnlarge</find>
+      <find>shop__page</find>
+      <find>htc__product__area</find>
+      <find>product</find>
+      <find>htc__product__container</find>
+      <find>routes</find>
+      <find>getPageBrowser</find>
+      <find>$list</find>
+      <find>.product</find>
+      <find>mainmenu__nav hidden-xs hidden-sm</find>
+      <find>menus.catalog</find>
+      <find>?</find>
+      <find>@menus.catalog</find>
+      <find>headingOne</find>
+      <find>collapseOne</find>
+      <find>one</find>
+      <find>login</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\OSPanel\domains\pkprof.com.loc\tmp</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/vendor/ikkez/f3-assets/lib/assets.php" />
+        <option value="$PROJECT_DIR$/app/controllers/front/AppProfile.php" />
+        <option value="$PROJECT_DIR$/app/controllers/front/AppOrder.php" />
+        <option value="$PROJECT_DIR$/app/cfg/meta/_user_profile.json" />
+        <option value="$PROJECT_DIR$/app/views/tmart/pages/home.html" />
+        <option value="$PROJECT_DIR$/pkprof.com/css/core.css" />
+        <option value="$PROJECT_DIR$/app/views/tmart/tovar/one.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/views/tmart/basket/form.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/user/list.html" />
+        <option value="$PROJECT_DIR$/.gitmodules" />
+        <option value="$PROJECT_DIR$/app/views/tmart/cm/list.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/app/controllers/api/AppUser.php" />
+        <option value="$PROJECT_DIR$/app/controllers/AppUser.php" />
+        <option value="$PROJECT_DIR$/app/views/tmart/banner_home/list.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/user/menu.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/blocks/header.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/assets/css/shortcode/header.css" />
+        <option value="$PROJECT_DIR$/app/views/tmart/assets/js/ui.js" />
+        <option value="$PROJECT_DIR$/app/views/tmart/novost/list-vertical.html" />
+        <option value="$PROJECT_DIR$/app/controllers/front/AppContent.php" />
+        <option value="$PROJECT_DIR$/app/controllers/front/AppNovost.php" />
+        <option value="$PROJECT_DIR$/pkprof.com/js/jquery-disqus.js" />
+        <option value="$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/lib/models/BaseReader.php" />
+        <option value="$PROJECT_DIR$/app/controllers/AppProfile.php" />
+        <option value="$PROJECT_DIR$/app/views/tmart/lk/profile/edit.html" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/views/tmart/lk/order/payment-failure.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/lk/order/payment-success.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/lk/order/items.html" />
+        <option value="$PROJECT_DIR$/app/controllers/front/AppBasket.php" />
+        <option value="$PROJECT_DIR$/app/controllers/AppOrder.php" />
+        <option value="$PROJECT_DIR$/app/controllers/front/AppTovar.php" />
+        <option value="$PROJECT_DIR$/pkprof.com/request.xml" />
+        <option value="$PROJECT_DIR$/app/views/tmart/tovar/index.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/tovar/list_cat.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/_src/tmart/js/main.js" />
+        <option value="$PROJECT_DIR$/pkprof.com/js/main.js" />
+        <option value="$PROJECT_DIR$/app/controllers/AppKassy.php" />
+        <option value="$PROJECT_DIR$/pkprof.com/css/custom.css" />
+        <option value="$PROJECT_DIR$/app/cfg/routes.ini" />
+        <option value="$PROJECT_DIR$/app/views/tmart/banner/slider.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/layout.html" />
+        <option value="$PROJECT_DIR$/app/controllers/front/AppKassy.php" />
+        <option value="$PROJECT_DIR$/app/views/tmart/kassy/list.html" />
+        <option value="$PROJECT_DIR$/vendor/.env" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/views/tmart/kassy/list_weekday.html" />
+        <option value="$PROJECT_DIR$/app/views/tmart/kassy/one.html" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="9001" notify_if_session_was_finished_without_being_paused="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="pkprof.loc" id="77a856ff-a7bc-49ee-b564-e78486b35259" name="pkprof.loc" />
+      <server host="127.0.0.1" id="c4fbfdb0-da0e-4043-81ca-2563babd25dd" name="127.0.0.1" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/vendor/bcosca/fatfree-core/db" remote-root="D:/OSPanel/modules/system/html/openserver/phpmyadmin" />
+        </path_mappings>
+      </server>
+      <server host="aheadway.loc" id="7878447d-3b1c-485c-8c5f-eaf19f833446" name="aheadway.loc" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/vendor/blueimp/jquery-file-upload/server/php" remote-root="D:/OSPanel/domains/a-headway.ru/a-headway.ru" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 5.6">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/blueimp/jquery-file-upload" />
+      <path value="$PROJECT_DIR$/vendor/ikkez/f3-schema-builder" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/bcosca/fatfree-core" />
+      <path value="$PROJECT_DIR$/vendor/ikkez/f3-pagination" />
+      <path value="$PROJECT_DIR$/vendor/ikkez/f3-fal" />
+      <path value="$PROJECT_DIR$/vendor/ikkez/f3-assets" />
+      <path value="$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core" />
+      <path value="$PROJECT_DIR$/vendor/voronkovich/sberbank-acquiring-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+    </include_path>
+  </component>
+  <component name="PhpXdebugProxy" ide_key="STORM" host="localhost" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-381" />
+    <option name="y" value="-21" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="banner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="banner_home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="banner_small" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="cm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="disqus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="kassy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="lk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="lk" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="lk" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="novost" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="tovar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tmart" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="pkprof.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="pkprof.com" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pkprof.com.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pkprof.com.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OSPanel\domains\pkprof.com.loc" />
+      <recent name="D:\OSPanel\domains\pkprof.com.loc\app\controllers\front" />
+      <recent name="D:\OSPanel\domains\pkprof.com.loc\app\controllers" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="pkprof.loc" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="pkprof.loc">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45d01c07-36c7-4dfe-90c0-d58dcd5e7332" name="Default Changelist" comment="" />
+      <created>1536755930891</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536755930891</updated>
+      <workItem from="1536755933224" duration="2710000" />
+      <workItem from="1536816794380" duration="7036000" />
+      <workItem from="1536834410749" duration="3663000" />
+      <workItem from="1536838123717" duration="5865000" />
+      <workItem from="1536903923665" duration="18962000" />
+      <workItem from="1537075271284" duration="1200000" />
+      <workItem from="1537089786204" duration="22000" />
+      <workItem from="1537162042184" duration="22020000" />
+      <workItem from="1537239566736" duration="20500000" />
+      <workItem from="1537335171097" duration="12647000" />
+      <workItem from="1537417493602" duration="17203000" />
+      <workItem from="1537505913876" duration="6699000" />
+      <workItem from="1537766169961" duration="1972000" />
+      <workItem from="1537780768893" duration="2279000" />
+      <workItem from="1537846263952" duration="5409000" />
+      <workItem from="1537854218691" duration="3354000" />
+      <workItem from="1537859993457" duration="10239000" />
+      <workItem from="1537933518275" duration="8336000" />
+      <workItem from="1538021138531" duration="13324000" />
+      <workItem from="1538105577973" duration="14011000" />
+      <workItem from="1538140912458" duration="2112000" />
+      <workItem from="1538201205638" duration="7292000" />
+      <workItem from="1538564695080" duration="5465000" />
+      <workItem from="1538976468659" duration="3395000" />
+      <workItem from="1538989823505" duration="2317000" />
+      <workItem from="1539927762049" duration="2977000" />
+      <workItem from="1540215362268" duration="3162000" />
+      <workItem from="1540885664455" duration="12536000" />
+      <workItem from="1541169196675" duration="415000" />
+      <workItem from="1541478750358" duration="143000" />
+      <workItem from="1541505357026" duration="2247000" />
+      <workItem from="1541566394508" duration="9355000" />
+      <workItem from="1541663374487" duration="6656000" />
+      <workItem from="1541685937705" duration="220000" />
+      <workItem from="1541742442132" duration="744000" />
+      <workItem from="1541860516570" duration="1305000" />
+      <workItem from="1541934624854" duration="478000" />
+      <workItem from="1542002336456" duration="599000" />
+      <workItem from="1542259682414" duration="8922000" />
+      <workItem from="1542295722782" duration="11304000" />
+      <workItem from="1542341768613" duration="10000" />
+      <workItem from="1542350302415" duration="2457000" />
+      <workItem from="1542353089126" duration="11600000" />
+      <workItem from="1542604473913" duration="4484000" />
+      <workItem from="1542618755758" duration="2509000" />
+      <workItem from="1542696923219" duration="6249000" />
+      <workItem from="1542714820833" duration="169000" />
+      <workItem from="1542715935406" duration="287000" />
+      <workItem from="1542774743915" duration="267000" />
+      <workItem from="1542778294488" duration="593000" />
+      <workItem from="1542790201082" duration="600000" />
+      <workItem from="1544692853683" duration="50000" />
+      <workItem from="1554278713981" duration="412000" />
+    </task>
+    <task id="LOCAL-00001" summary="Проверка на существующий заказ">
+      <created>1538627771499</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538627771499</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="288782000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.54941374" visible="true" weight="0.27760968" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32998326" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4120603" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32998326" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3283082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Structure" order="4" sideWeight="0.45058626" side_tool="true" weight="0.18835099" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Проверка на существующий заказ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проверка на существующий заказ" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>$this-&gt;checkAccess</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/controllers/AppProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/lk/profile/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkprof.com/js/style-customizer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/blocks/head-libs.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/blocks/scripts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/_src/tmart/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/views/comments/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ikkez/f3-pagination/lib/pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="112" column="57" lean-forward="true" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/lib/controllers/Authorization.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/lib/controllers/AccessController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/lib/controllers/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1836" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/lib/controllers/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/tovar/list-widget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkprof.com/css/core.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkprof.com/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkprof.com/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/front/AppNovost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/lib/controllers/Content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3264">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/novost/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/cm/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/lk/order/items.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/blocks/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/tovar/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/tovar/list_cat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/front/AppTovar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/blocks/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="56" lean-forward="true" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bcosca/fatfree-core/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2278">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/banner/slider.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/tovar/one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="79" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/lib/controllers/front/Content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="547" column="19" lean-forward="true" selection-start-line="547" selection-start-column="19" selection-end-line="547" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/lib/helpers/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="124" column="64" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/AppUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AppUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/AppBasket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/pages/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/cfg/site.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/cfg/meta/payment.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-539">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkprof.com/filemanager/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="429" column="45" selection-start-line="429" selection-start-column="45" selection-end-line="429" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env_prod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" lean-forward="true" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core/src/lib/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/kassy/one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#repeat#0;n#true#0;n#check#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/kassy/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/front/AppContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/cfg/routes.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/kassy/list_weekday.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="95" selection-start-line="12" selection-start-column="95" selection-end-line="12" selection-end-column="95" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#check#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#check#0;n#repeat#0;n#table#0;n#check#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#td#2;n#tr#0;n#check#0;n#repeat#0;n#table#0;n#check#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tmart/kassy/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/front/AppKassy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/voronkovich/sberbank-acquiring-client/src/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="413" column="20" selection-start-line="413" selection-start-column="20" selection-end-line="413" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AppOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

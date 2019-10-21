@@ -1,0 +1,14 @@
+<check if="!empty(@list)">
+<section class="htc__blog__area bg__white">
+    <div class="container pt--40">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section__title section__title--2 text-center pb--40">
+                    <h2 class="title__line">Последние новости</h2>
+                </div>
+            </div>
+        </div>
+        <include href="{{ @site.tpl.'/novost/list.html' }}" with="list={{ ['subset' => @list] }}"/>
+    </div>
+</section>
+</check>

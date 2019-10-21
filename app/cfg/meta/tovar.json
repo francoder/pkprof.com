@@ -1,0 +1,326 @@
+{
+    "namespace": "tovar",
+    "acl": "tovar",
+    "aliases": {
+        "list": "backend_content_list",
+        "list_page": "backend_content_list_page",
+        "create": "backend_content_create",
+        "delete": "backend_content_delete",
+        "edit": "backend_content_edit",
+        "update": "backend_content_update",
+        "value": "backend_content_value",
+        "labels": "backend_content_labels",
+        "moderation": "backend_content_moderation",
+        "moderation_controls": "backend_content_moderation_controls",
+        "move": "backend_content_move",
+        "upload": "backend_content_upload",
+        "sort": "backend_content_sort",
+        "tree_json": "backend_content_tree_json"
+    },
+    "items_aliases": {
+        "create": "backend_content_item_create",
+        "delete": "backend_content_item_delete",
+        "update": "backend_content_item_update",
+        "value": "backend_content_item_value",
+        "upload": "backend_content_item_upload",
+        "uploader_post": "backend_content_item_uploader_post",
+        "one": "backend_content_item_one",
+        "sort": "backend_content_item_sort"
+    },
+    "view": {
+        "list_fields": "admin\/content\/fields_in_list.html",
+        "list": "admin\/content\/list.html",
+        "list_header": "admin\/content\/head.html",
+        "list_footer": "admin\/content\/footer.html",
+        "list_form": "admin\/content\/list_form.html",
+        "list_item": "admin\/content\/list_item.html",
+        "list_empty": "admin\/content\/list_empty.html",
+        "one": null,
+        "form": "admin\/content\/form.html",
+        "edit": "admin\/content\/edit.html",
+        "labels": "system\/content\/labels.html",
+        "moderation_controls": "system\/content\/moderation.html",
+        "hide_node_link": true,
+        "perpage": 10,
+        "form_struct": [
+            [
+                [
+                    "col-lg-3",
+                    "fko_postavschik"
+                ],
+                [
+                    "col-lg-3",
+                    "fko_razdel"
+                ],
+                [
+                    "col-lg-3",
+                    "title"
+                ],
+                [
+                    "col-lg-3",
+                    "slug"
+                ]
+            ],
+            [
+                [
+                    "col-lg-3",
+                    "af_price"
+                ],
+                [
+                    "col-lg-3",
+                    "fko_mera"
+                ],
+                [
+                    "col-lg-6",
+                    "af_short"
+                ]
+            ],
+            [
+                [
+                    "col-lg-12",
+                    "af_info"
+                ]
+            ]
+        ],
+        "edit_item": "system\/content\/item\/list_item.html",
+        "icon": "fa fa-shopping-cart fa-fw"
+    },
+    "fields_in_list": [],
+    "texts": {
+        "ru": {
+            "title": "Товар",
+            "title_pl": "Товары",
+            "form_title": "Добавить товар",
+            "items_title": "Фотографии товара",
+            "items_form_title": "Добавить фотографии товара",
+            "item_instruction": ""
+        }
+    },
+    "items": [
+        "photo"
+    ],
+    "fields": {
+        "id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "id",
+            "fullname": "id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "user_id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "user_id",
+            "fullname": "user_id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "created": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "created",
+            "fullname": "created",
+            "type": null,
+            "data_type": "timestamp",
+            "texts": null
+        },
+        "edited": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "edited",
+            "fullname": "edited",
+            "type": null,
+            "data_type": "tinyint(1)",
+            "texts": null
+        },
+        "fko_razdel": {
+            "is_additional": false,
+            "foreign_key": true,
+            "name": "razdel",
+            "fullname": "fko_razdel",
+            "type": "int",
+            "data_type": "int(11)",
+            "texts": {
+                "ru": {
+                    "label": "Раздел"
+                },
+                "label": null
+            },
+            "table": "razdel"
+        },
+        "title": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "title",
+            "fullname": "title",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Название товара"
+                }
+            }
+        },
+        "published": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "published",
+            "fullname": "published",
+            "type": "checkbox",
+            "data_type": "tinyint(1)",
+            "texts": {
+                "ru": {
+                    "label": "Опубликован",
+                    "hint": "Виден посетителям или нет"
+                }
+            }
+        },
+        "slug": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "slug",
+            "fullname": "slug",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Адрес страницы на сайте",
+                    "hint": "\/razdel\/<nazvanie>"
+                }
+            }
+        },
+        "img": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "img",
+            "fullname": "img",
+            "type": "textarea",
+            "data_type": "text",
+            "texts": null
+        },
+        "af_price": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "price",
+            "fullname": "af_price",
+            "type": "decimal",
+            "data_type": "decimal(10,2)",
+            "texts": {
+                "ru": {
+                    "label": "Цена",
+                    "placeholder": ""
+                }
+            }
+        },
+        "af_short": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "short",
+            "fullname": "af_short",
+            "type": "textarea",
+            "data_type": "text",
+            "texts": {
+                "ru": {
+                    "label": "Краткое описание",
+                    "placeholder": ""
+                }
+            }
+        },
+        "af_info": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "info",
+            "fullname": "af_info",
+            "type": "wysiwyg",
+            "data_type": "longtext",
+            "texts": {
+                "ru": {
+                    "label": "Описание",
+                    "placeholder": ""
+                }
+            }
+        },
+        "fko_postavschik": {
+            "is_additional": false,
+            "foreign_key": true,
+            "name": "postavschik",
+            "fullname": "fko_postavschik",
+            "type": "int",
+            "data_type": "int(11)"
+        },
+        "fko_mera": {
+            "is_additional": false,
+            "foreign_key": true,
+            "name": "mera",
+            "fullname": "fko_mera",
+            "type": "int",
+            "data_type": "int(11)"
+        },
+        "moderation": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "moderation",
+            "fullname": "moderation",
+            "type": null,
+            "data_type": "tinyint(4)", 
+            "texts": {
+                "i18n": {
+                    "label": "node.labels.moderation"
+                }
+            }
+        }
+    },
+    "unique_slug": true,
+    "relations": {
+        "children": {
+            "tovar_sklad__fko_tovar": {
+                "table": "tovar_sklad",
+                "name": "fko_tovar",
+                "texts": {
+                    "ru": {
+                        "label": "Остатки"
+                    }
+                }
+            }
+        },
+        "children_optional": [],
+        "parents": {
+            "tovar__fko_razdel": {
+                "name": "fko_razdel",
+                "table": "razdel",
+                "num": 1,
+                "texts": {
+                    "ru": {
+                        "label": "Раздел"
+                    }
+                }
+            },
+            "tovar__fko_postavschik": {
+                "name": "fko_postavschik",
+                "table": "postavschik",
+                "num": 1,
+                "texts": {
+                    "ru": {
+                        "label": "Поставщик"
+                    }
+                }
+            },
+            "tovar__fko_mera": {
+                "name": "fko_mera",
+                "table": "mera",
+                "num": 1,
+                "texts": {
+                    "ru": {
+                        "label": "Единица измерения"
+                    }
+                }
+            }
+        },
+        "parents_optional": [],
+        "plural": [],
+        "hidden": []
+    }
+}

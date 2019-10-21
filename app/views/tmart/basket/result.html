@@ -1,0 +1,95 @@
+<section class="about"><div class="container">
+<div class="row"><div class="col-md-12">
+<div class="cart_page">
+    <div class="row table_head">
+<div class="col-md-2">Товар</div>
+<div class="col-md-4"></div>
+<div class="col-md-2 center">Цена</div>
+<div class="col-md-2 center">Количество</div>
+<div class="col-md-2 center">Сумма</div>
+    </div>
+<repeat group="{{ @basket.items }}" key="{{ @id }}" value="{{ @item }}">
+
+    <check if="{{ count(@item) > 1 }}">
+        <true>
+        <repeat group="{{ @item }}" key="{{ @variant_id }}" value="{{ @variant }}">
+            <check if="{{ @variant.amount > 0 }}">
+<div class="row table_row" data-variant-id="{{ @variant_id }}">
+    <div class="col-md-2 col-xs-4">
+        <check if="{{ isset(@item.0.info.img) }}">
+        <img src="{{ @item.0.info.img->enlarge(100, 100) }}" alt="{{ @variant.title }}" />
+        </check>
+    </div>
+    <div class="col-md-3 col-xs-4">
+        <div class="tovar"><a href="{{ 'frontend_tovar_node', 'slug='.@item['0']['info']['slug'] | alias }}">{{ @item.0.info.title }}</a></div>
+        <div class="tovar_kompl">{{ @variant.info.title }}</div>
+    </div>
+    <div class="col-md-2 col-xs-4 cena center">{{ @variant.info.af_price }} Р</div>
+    <div class="col-md-2 col-xs-4 center">{{ @variant.amount }}</div>
+    <div class="col-md-2 col-xs-4 center"><span class="summa bcl_sum">{{ @variant.info.af_price*@variant.amount }} Р</span></div>
+    <div class="col-md-1 col-xs-4 center delete_row"><div class="delete bcl_del"></div></div>
+</div>
+            </check>
+        </repeat>
+        </true>
+        <false>
+<div class="row table_row" data-id="{{ @id }}">
+    <div class="col-md-2 col-xs-4">
+        <check if="{{ isset(@item.0.info.img) }}">
+        <img src="{{ @item.0.info.img->enlarge(100,100) }}" alt="{{ @item.0.info.title }}" />
+        </check>
+    </div>
+    <div class="col-md-4 col-xs-4">
+        <div class="tovar"><a href="{{ 'frontend_tovar_node', 'slug='.@item['0']['info']['slug'] | alias }}">{{ @item.0.info.title }}</a></div>
+    </div>
+    <div class="col-md-2 col-xs-4 cena center">{{ @item.0.info.af_price }} Р</div>
+    <div class="col-md-2 col-xs-4 center">{{ @item.0.amount }}</div>
+    <div class="col-md-2 col-xs-4 center"><span class="summa bcl_sum">{{ @item.0.info.af_price*@item.0.amount }} Р</span></div>
+</div>
+        </false>
+    </check>
+</repeat>
+    <div class="row">
+<div class="col-sm-2 col-xs-6 col-sm-offset-8 itogo-t">Итого:</div>
+<div class="col-sm-2 col-xs-5 summa itogo center bcl_itogo"> {{ @basket.sum }} Р</div>
+    </div>
+    
+<div class="row">
+    <div class="col-sm-12 col-md-6">
+        <div class="cart_page">
+            <div class="row">
+                <div class="col-sm-12"><h2>Информация о покупателе</h2>
+                <check if="{{ !empty(@msg.fio) }}">
+                    <p>Имя: {{ @msg.fio }}</p>
+                </check>
+                <check if="{{ !empty(@msg.adres) }}">
+                    <p>Адрес: {{ @msg.adres }}</p>
+                </check>
+                </div>
+                <check if="{{ !empty(@msg.tel) }}">
+                    <div class="col-sm-6"><p>Телефон: {{ @msg.tel }}</p></div>
+                </check>
+                <check if="{{ !empty(@msg.email) }}">
+                    <div class="col-sm-6"><p>E-mail: {{ @msg.email }}</p></div>
+                </check>                                    
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <div class="cart_page">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Информация о заказе</h2>
+                </div>
+                <div class="col-sm-6"><p>Доставка: {{ @msg.delivery }}</p></div>
+                <div class="col-sm-6"><p>Оплата: {{ @msg.payment }}</p></div>
+                <check if="{{ !empty(@msg.comment) }}">
+                <div class="col-sm-12"><p>Комментарий: {{ @msg.comment }}</p></div>
+                </check>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div></div>
+</div></section>

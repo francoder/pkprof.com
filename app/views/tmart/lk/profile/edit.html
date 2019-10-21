@@ -1,0 +1,22 @@
+<asset href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+       crossorigin="anonymous"/>
+<include href="admin/blocks/scripts.html"/>
+<section class="htc__contact__area ptb--50 bg__white"><div class="container"><div class="row"><div class="col-xs-12 content">
+<div class="row">
+    <div class="col-sm-6">
+        <h2><a href="{{ 'app_backend_order_list' | alias }}">Мои заказы ({{ count(@list_orders) }})</a></h2>
+    </div>
+    <div class="col-sm-6 text-right">
+        <a class="btn btn-lg btn-primary" href="{{ 'logout' | alias }}" title="Выйти из Личного Кабинета">Выйти <i class="fa fa-sign-out-alt"></i></a>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-sm-12">
+<h2>Мой профиль:</h2>
+<include href="admin/profile/edit.html"/>
+    </div>
+</div>
+</div></div></div>
+</section>

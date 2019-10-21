@@ -1,0 +1,49 @@
+<div class="htc__login__register bg__white ptb--130" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <ul class="login__register__menu" role="tablist">
+                    <li role="presentation" class="login active"><a href="#login" role="tab" data-toggle="tab" aria-expanded="true">Вход</a></li>
+                    <li role="presentation" class="register"><a href="#register" role="tab" data-toggle="tab" aria-expanded="false">Регистрация</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Start Login Register Content -->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <include href="system/alerts/block.html"/>
+                <div class="htc__login__register__wrap">
+                    <!-- Start Single Content -->
+                    <div id="login" role="tabpanel" class="single__tabs__panel tab-pane fade active in">
+                        <form class="login" method="post" action="{{ 'login_post' | alias }}">
+                            <input placeholder="email" name="email" type="text">
+                            <input placeholder="пароль" name="password" type="password">
+                        <div class="htc__login__btn mt--30">
+                            <button class="btn btn-block btn-lg" name="login" type="submit">Войти</button>
+                        </div>
+                        </form>
+                        <div class="tabs__checkbox">
+                            <span class="forget"><a href="{{ 'restore_get' | alias }}">Забыли пароль?</a></span>
+                        </div>
+                    </div>
+                    <!-- End Single Content -->
+                    <!-- Start Single Content -->
+                    <div id="register" role="tabpanel" class="single__tabs__panel tab-pane fade">
+                        <form class="login" method="post" action="{{ 'reg_post' | alias }}">
+                            <input placeholder="email*" name="email" type="email">
+                            <input placeholder="Номер карты Золотая Середина*" nale="af_pkcard" type="text">
+                            <input placeholder="ФИО" name="title" type="text">
+                            <input placeholder="Телефон" name="af_tel" type="text">
+                            <input placeholder="Профсоюзная организация" name="af_org" type="text">
+                        <div class="htc__login__btn">
+                            <button class="btn btn-block btn-lg">Получить пароль</button>
+                        </div>
+                        </form>
+                    </div>
+                    <!-- End Single Content -->
+                </div>
+            </div>
+        </div>
+        <!-- End Login Register Content -->
+    </div>
+</div>

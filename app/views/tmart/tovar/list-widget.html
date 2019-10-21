@@ -1,0 +1,36 @@
+<check if="@basket.count>0">
+<true>
+{*<small>У вас <em class="highlight">{{ @basket.count }} товар(ов)</em> в заявке</small><br><br>*}
+<div class="shp__cart__wrap">
+<repeat group="@basket.items" key="@id" value="@item"><div class="shp__single__product">
+    <div class="shp__pro__thumb">
+        <a href="{{ @item.info._link }}">
+            <check if="is_object(@item.info.img) && @item.info.img->exists()"><img src="{{ @item.info.img->originalRatio(70,70) }}" width="70" alt="{{ @item.info.title }}"/></check>
+        </a>
+    </div>
+    <div class="shp__pro__details">
+        <h2><a href="{{ @item.info._link }}">{{ @item.title }}</a></h2>
+        <span class="shp__price">{{ intval(@item.price) }}</span> руб. x 
+        <span class="quantity">
+            <a data-bs-basket-minus data-id="{{ @id }}">-</a> 
+            <input data-bs-basket-amount data-id="{{ @id }}" value="{{ @item.amount }}"/> 
+            <a data-bs-basket-plus data-id="{{ @id }}">+</a>
+        </span>
+        = <span class="shp__price">{{ @item.sum }}</span> руб.
+    </div>
+    <div class="remove__btn">
+        <a data-bs-basket-del data-id="{{ @id }}" title="Удалить из корзины"><i class="zmdi zmdi-close"></i></a>
+    </div>
+</div></repeat>
+</div>
+<ul class="shoping__total">
+    <li class="subtotal">Итого:</li>
+    <li class="total__price">{{ @basket.sum }} руб.</li>
+</ul>
+<ul class="shopping__btn">
+    <li class="shp__checkout"><a href="{{ 'frontend_basket' | alias }}">Перейти в корзину</a></li>
+    {*<li class="shp__checkout"><a href="checkout.html">Checkout</a></li>*}
+</ul>
+</true>
+<false><small>У вас нет товаров в корзине</small></false>
+</check>

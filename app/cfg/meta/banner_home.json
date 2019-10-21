@@ -1,0 +1,152 @@
+{
+    "namespace": "banner_home",
+    "acl": "banner_home",
+    "aliases": {
+        "list": "backend_content_list",
+        "list_page": "backend_content_list_page",
+        "create": "backend_content_create",
+        "delete": "backend_content_delete",
+        "edit": "backend_content_edit",
+        "update": "backend_content_update",
+        "value": "backend_content_value",
+        "labels": "backend_content_labels",
+        "sort": "backend_content_sort",
+        "move": "backend_content_move",
+        "tree_json": "backend_content_tree_json",
+        "upload": "backend_content_upload",
+        "point_value": "backend_content_point_value"
+    },
+    "items_aliases": {
+        "create": "backend_content_item_create",
+        "delete": "backend_content_item_delete",
+        "update": "backend_content_item_update",
+        "sort": "backend_content_item_sort",
+        "value": "backend_content_item_value",
+        "upload": "backend_content_item_upload",
+        "uploader_post": "backend_content_item_uploader_post",
+        "one": "backend_content_item_one"
+    },
+    "view": {
+        "list_fields": "admin\/content\/fields_in_list.html",
+        "list": "admin\/content\/list.html",
+        "list_header": "admin\/content\/head.html",
+        "list_footer": "admin\/content\/footer.html",
+        "list_form": "admin\/content\/list_form.html",
+        "list_item": "admin\/content\/list_item.html",
+        "list_empty": "admin\/content\/list_empty.html",
+        "one": null,
+        "form": "admin\/content\/form.html",
+        "edit": "admin\/content\/edit.html",
+        "edit_item": "system\/content\/item\/list_item.html",
+        "labels": "system\/content\/labels.html",
+        "moderation_controls": "system\/content\/moderation.html",
+        "hide_node_link": true,
+        "perpage": 10,
+        "icon": "fa fa-list fa-fw",
+        "form_struct": null
+    },
+    "fields_in_list": [
+        "title",
+        "af_img"
+    ],
+    "texts": {
+        "ru": {
+            "title": "Картинка под слайдером",
+            "title_pl": "Картинки под слайдером"
+        }
+    },
+    "items": [],
+    "fields": {
+        "id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "id",
+            "fullname": "id",
+            "type": null,
+            "data_type": "int(11)"
+        },
+        "user_id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "user_id",
+            "fullname": "user_id",
+            "type": null,
+            "data_type": "int(11)"
+        },
+        "created": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "created",
+            "fullname": "created",
+            "type": null,
+            "data_type": "timestamp"
+        },
+        "edited": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "edited",
+            "fullname": "edited",
+            "type": null,
+            "data_type": "tinyint(1)"
+        },
+        "sort": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "sort",
+            "fullname": "sort",
+            "type": null,
+            "data_type": "int(11)"
+        },
+        "title": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "title",
+            "fullname": "title",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Название"
+                }
+            }
+        },
+        "published": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "published",
+            "fullname": "published",
+            "type": "checkbox",
+            "data_type": "tinyint(1)"
+        },
+        "af_img": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "img",
+            "fullname": "af_img",
+            "type": "image",
+            "data_type": "enum('jpg','jpeg','png','gif')",
+            "texts": {
+                "ru": {
+                    "label": "Изображение",
+                    "placeholder": ""
+                }
+            }
+        },
+        "af_link": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "link",
+            "fullname": "af_link",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Ссылка",
+                    "placeholder": ""
+                }
+            }
+        }
+    },
+    "unique_slug": true,
+    "relations": []
+}

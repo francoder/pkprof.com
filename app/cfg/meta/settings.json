@@ -1,0 +1,231 @@
+{
+    "namespace": "settings",
+    "acl": "settings",
+    "aliases": {
+        "list": "backend_content_list",
+        "list_page": "backend_content_list_page",
+        "create": "backend_content_create",
+        "delete": "backend_content_delete",
+        "edit": "backend_content_edit",
+        "update": "backend_content_update",
+        "value": "backend_content_value",
+        "labels": "backend_content_labels",
+        "move": "backend_content_move",
+        "upload": "backend_content_upload",
+        "sort": "backend_content_sort"
+    },
+    "view": {
+        "list_fields": "admin\/content\/fields_in_list.html",
+        "list": "admin\/content\/list.html",
+        "list_header": "admin\/content\/head.html",
+        "list_footer": "admin\/content\/footer.html",
+        "list_form": "admin\/content\/list_form.html",
+        "list_item": "admin\/content\/list_item.html",
+        "list_empty": "admin\/content\/list_empty.html",
+        "one": null,
+        "form": "admin\/content\/form.html",
+        "edit": "admin\/content\/edit.html",
+        "labels": "system\/content\/labels.html",
+        "moderation_controls": "system\/content\/moderation.html",
+        "perpage": 10,
+        "form_struct": [
+            [
+                [
+                    "col-lg-4",
+                    "slug"
+                ],
+                [
+                    "col-lg-4",
+                    "title"
+                ],
+                [
+                    "col-lg-4",
+                    "af_field"
+                ]
+            ],
+            [
+                [
+                    "col-lg-6",
+                    "af_val"
+                ],
+                [
+                    "col-lg-6",
+                    "af_hint"
+                ]
+            ]
+        ],
+        "edit_item": "system\/content\/item\/list_item.html",
+        "hide_node_link": true,
+        "icon": "fa fa-cogs fa-fw"
+    },
+    "fields_in_list": [
+        "slug",
+        "title",
+        "af_val"
+    ],
+    "texts": {
+        "ru": {
+            "title": "Настройка",
+            "title_pl": "Настройки",
+            "form_title": "Добавить настройку"
+        }
+    },
+    "items": [],
+    "fields": {
+        "id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "id",
+            "fullname": "id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "user_id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "user_id",
+            "fullname": "user_id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "created": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "created",
+            "fullname": "created",
+            "type": null,
+            "data_type": "timestamp",
+            "texts": null
+        },
+        "deleted": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "deleted",
+            "fullname": "deleted",
+            "type": "checkbox",
+            "data_type": "tinyint(1)"
+        },
+        "edited": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "edited",
+            "fullname": "edited",
+            "type": null,
+            "data_type": "tinyint(1)",
+            "texts": null
+        },
+        "title": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "title",
+            "fullname": "title",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Описание переменной",
+                    "placeholder": "Что хранится в переменной?"
+                },
+                "i18n": {
+                    "label": "content.title.label",
+                    "hint": "content.tooltip.title"
+                }
+            }
+        },
+        "af_val": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "val",
+            "fullname": "af_val",
+            "type": "textarea",
+            "data_type": "text",
+            "texts": {
+                "ru": {
+                    "label": "Значение"
+                }
+            }
+        },
+        "af_field": {
+            "name": "af_field",
+            "fullname": "af_field",
+            "is_additional": true,
+            "type": "text",
+            "selected_id": "text",
+            "options": {
+                "i18n": {
+                    "text": "tables.fields.types.text",
+                    "textarea": "tables.fields.types.textarea",
+                    "wysiwyg": "tables.fields.types.wysiwyg",
+                    "int": "tables.fields.types.int",
+                    "decimal": "tables.fields.types.decimal",
+                    "float": "tables.fields.types.float",
+                    "date": "tables.fields.types.date",
+                    "time": "tables.fields.types.time",
+                    "datetime": "tables.fields.types.datetime",
+                    "checkbox": "tables.fields.types.checkbox",
+                    "image": "tables.fields.types.image",
+                    "file": "tables.fields.types.file",
+                    "point": "tables.fields.types.point"
+                }
+            },
+            "texts": {
+                "i18n": {
+                    "label": "tables.fields.types.label"
+                }
+            },
+            "data_type": "varchar(255)"
+        },
+        "slug": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "slug",
+            "fullname": "slug",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Имя переменной",
+                    "placeholder": "Допустимые символы: a-z,_,0-9"
+                },
+                "i18n": {
+                    "label": "content.slug.label",
+                    "hint": "content.tooltip.slug"
+                }
+            }
+        },
+        "af_hint": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "hint",
+            "fullname": "af_hint",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Подсказка для пользователей"
+                }
+            }
+        }
+    },
+    "unique_slug": true,
+    "relations": {
+        "children": [],
+        "children_optional": [],
+        "parents": [],
+        "parents_optional": [],
+        "plural": [],
+        "hidden": []
+    },
+    "items_aliases": {
+        "create": "backend_content_item_create",
+        "delete": "backend_content_item_delete",
+        "update": "backend_content_item_update",
+        "sort": "backend_content_item_sort",
+        "value": "backend_content_item_value",
+        "upload": "backend_content_item_upload",
+        "uploader_post": "backend_content_item_uploader_post",
+        "one": "backend_content_item_one"
+    }
+}

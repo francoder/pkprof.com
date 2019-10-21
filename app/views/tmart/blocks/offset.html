@@ -1,0 +1,24 @@
+<!-- Start Offset Wrapper -->
+<div class="offset__wrapper">
+    <!-- Start Search Popap -->
+    <div class="search__area">
+        <div class="container" >
+            <div class="row" >
+                <div class="col-md-12" >
+                    <div class="search__inner">
+                        <form action="{{ 'search' | alias }}" method="get">
+                            <input placeholder="Введите поисковую фразу... " type="text" name="q">
+                            <button type="submit"></button>
+                        </form>
+                        <div class="search__close__btn">
+                            <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Search Popap -->
+    <include href="{{ @site.tpl.'/basket/widget.html' }}"/>
+</div>
+<!-- End Offset Wrapper -->

@@ -1,0 +1,12 @@
+<section class="about"><div class="container">
+<check if="{{ !empty(@basket.items) }}">
+    <true>
+<div id="alerts"><include href="default/alerts/list.html" with="tpl={{ @site['tpl'].'/blocks/alerts' }}"/></div>
+<include href="{{ @site['tpl'].'/basket/items.html' }}"/>
+<include href="{{ @site['tpl'].'/basket/form.html' }}"/>
+    </true>
+    <false>
+    <div class="bc_right">Корзина пуста. <a href="{{ 'frontend_tovar_index' | alias }}">Выбрать товары в каталоге</a></div><div class="clr"></div>
+    </false>
+</check>
+</div></section>

@@ -1,0 +1,12 @@
+<div class="blog-details-top">
+    <div class="blog-details-thumb-wrap">
+        <div class="blog-details-thumb">
+            {~ \bs_imgtag(@node, 'img', 'cropEnlarge', 1170, 555) ~}
+        </div>
+        <div class="upcoming-date">
+            {{ date('j',strtotime(@node.af_date)) }}<span class="upc-mth">{{ \helpers\Date::MonthName(@node.af_date) }} {{ date('Y',strtotime(@node.af_date)) }}</span>
+        </div>
+    </div>
+    <h2>{{ @node.title }}</h2>
+    <div class="blog-details-pra">{{ @node.af_text | raw }}</div>
+</div>

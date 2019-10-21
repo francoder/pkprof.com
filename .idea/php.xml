@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/blueimp/jquery-file-upload" />
+      <path value="$PROJECT_DIR$/vendor/ikkez/f3-schema-builder" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/bcosca/fatfree-core" />
+      <path value="$PROJECT_DIR$/vendor/ikkez/f3-pagination" />
+      <path value="$PROJECT_DIR$/vendor/ikkez/f3-fal" />
+      <path value="$PROJECT_DIR$/vendor/ikkez/f3-assets" />
+      <path value="$PROJECT_DIR$/vendor/bigsiter/bigsiter-cms-core" />
+      <path value="$PROJECT_DIR$/vendor/voronkovich/sberbank-acquiring-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+    </include_path>
+  </component>
+</project>

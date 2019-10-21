@@ -1,0 +1,44 @@
+<include href="admin/blocks/scripts.html"/>
+<section class="htc__contact__area ptb--50 bg__white"><div class="container"><div class="row"><div class="col-xs-12 content">
+    <table class="table table-bordered table-condensed">
+        <thead><tr>
+            <th>№</th>
+            <th>Статус</th>
+            <th>Товары в заказе</th>
+            <th class="text-center">Сумма к оплате</th>
+            <th class="text-center">Способ оплаты</th>
+        </tr></thead>
+        <tbody>
+            <repeat group="@data.list.subset" value="@order">
+                <tr class="{{ @order.fko_order_status==2?'warning':'' }}">
+                <td>{{ @order.id }}</td>
+                <td>{{ @order.cat_order_status }}</td>
+                    <td>
+                        <table class="table table-bordered table-condensed table-striped">
+                            <thead><tr><th>Наименование</th><th class="text-center">Цена</th><th class="nowrap text-center">Кол-во</th><th class="text-center">Сумма</th></tr></thead>
+                            <tbody>
+                        <repeat group="@order.basket.items" value="@item">
+                            <tr>
+                                <td class="col-sm-6"><a href="{{ @item.info._link }}" target="_blank">{{ @item.info.title }}</a></td>
+                                <td class="text-right">{{ @item.info.af_price }}&nbsp;руб.</td>
+                                <td class="text-center">{{ @item.amount }} {{ @item.info.mera.title }}</td>
+                                <td class="text-right">{{ sprintf('%0.2f', @item.sum) }}&nbsp;руб.</td>
+                            </tr>
+                        </repeat>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="text-center"><strong>{{ @order.basket.sum }} рублей</strong></td>
+                    <check if="{{ @order.fko_order_status == 2 && @order.fko_payment == 4}}">
+                        <true>
+                        <td class="text-center"><a href="?oid={{ @order.id}}&oamount={{ @order.basket.sum }}" class="btn btn-primary" target="_blank">Оплатить онлайн</a></td>
+                        </true>
+                        <false>
+                            <td class="text-center">{{ @order.cat_payment }}</td>
+                        </false>
+                    </check>
+                </tr>
+            </repeat>
+        </tbody>
+    </table>
+</div></div></div></section>

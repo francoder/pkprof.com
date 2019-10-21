@@ -1,0 +1,35 @@
+{
+  "name": "eco-komplex22.rf",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "datatables.net-bs": "^2.1.1",
+    "font-awesome": "^4.7.0",
+    "Ionicons": "ionicons#^2.0.1",
+    "blueimp-file-upload": "^9.21.0",
+    "select2": "^4.0.5",
+    "tinymce": "^4.7.13",
+    "admin-lte": "^2.4.3",
+    "blueimp-gallery": "^2.33.0",
+    "jeditable": "^2.0.3",
+    "jquery.i18n": "^1.0.4",
+    "fontawesome": "5.0.*"
+  },
+  "authors": [
+    "BigSiter <info@bigsiter.ru>"
+  ],
+  "resolutions": {
+    "jquery": "^3.2.1"
+  }
+}

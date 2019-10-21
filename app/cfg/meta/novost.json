@@ -1,0 +1,219 @@
+{
+    "namespace": "novost",
+    "acl": "novost",
+    "aliases": {
+        "list": "backend_content_list",
+        "list_page": "backend_content_list_page",
+        "create": "backend_content_create",
+        "delete": "backend_content_delete",
+        "edit": "backend_content_edit",
+        "update": "backend_content_update",
+        "value": "backend_content_value",
+        "labels": "backend_content_labels",
+        "move": "backend_content_move",
+        "upload": "backend_content_upload",
+        "sort": "backend_content_sort",
+        "tree_json": "backend_content_tree_json"
+    },
+    "view": {
+        "list_fields": "admin\/content\/fields_in_list.html",
+        "list": "admin\/content\/list.html",
+        "list_header": "admin\/content\/head.html",
+        "list_footer": "admin\/content\/footer.html",
+        "list_form": "admin\/content\/list_form.html",
+        "list_item": "admin\/content\/list_item.html",
+        "list_empty": "admin\/content\/list_empty.html",
+        "one": null,
+        "form": "admin\/content\/form.html",
+        "edit": "admin\/content\/edit.html",
+        "perpage": 10,
+        "form_struct": null,
+        "edit_item": "system\/content\/item\/list_item.html",
+        "labels": "system\/content\/labels.html",
+        "moderation_controls": "system\/content\/moderation.html",
+        "hide_node_link": true,
+        "icon": "fa fa-newspaper fa-fw"
+    },
+    "fields_in_list": [
+        "af_date",
+        "af_img",
+        "title"
+    ],
+    "texts": {
+        "ru": {
+            "title": "Новость",
+            "title_pl": "Новости",
+            "form_title": "Добавить новость"
+        },
+        "title": "Новость",
+        "title_pl": "Новости",
+        "form_title": "Добавить новость"
+    },
+    "items": [
+        "ulist"
+    ],
+    "fields": {
+        "id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "id",
+            "fullname": "id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "user_id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "user_id",
+            "fullname": "user_id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "created": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "created",
+            "fullname": "created",
+            "type": null,
+            "data_type": "timestamp",
+            "texts": null
+        },
+        "edited": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "edited",
+            "fullname": "edited",
+            "type": null,
+            "data_type": "tinyint(1)",
+            "texts": null
+        },
+        "title": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "title",
+            "fullname": "title",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Заголовок"
+                },
+                "i18n": {
+                    "label": "content.title.label",
+                    "hint": "content.tooltip.title"
+                },
+                "label": null
+            }
+        },
+        "published": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "published",
+            "fullname": "published",
+            "type": "checkbox",
+            "data_type": "tinyint(1)",
+            "texts": {
+                "i18n": {
+                    "label": "content.published.label",
+                    "hint": "content.tooltip.published"
+                },
+                "ru": {
+                    "label": "Видна посетителям",
+                    "hint": "Показывать посетителям или нет"
+                },
+                "label": null,
+                "hint": null
+            }
+        },
+        "af_date": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "date",
+            "fullname": "af_date",
+            "type": "date",
+            "data_type": "date",
+            "texts": {
+                "ru": {
+                    "label": "Дата",
+                    "placeholder": ""
+                },
+                "label": null,
+                "placeholder": null
+            }
+        },
+        "af_text": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "text",
+            "fullname": "af_text",
+            "type": "wysiwyg",
+            "data_type": "longtext",
+            "texts": {
+                "ru": {
+                    "label": "Текст",
+                    "placeholder": ""
+                },
+                "label": null,
+                "placeholder": null
+            }
+        },
+        "af_img": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "img",
+            "fullname": "af_img",
+            "type": "image",
+            "data_type": "enum('jpg','jpeg','png','gif')",
+            "texts": {
+                "ru": {
+                    "label": "Изображение для списка",
+                    "placeholder": ""
+                },
+                "label": null,
+                "placeholder": null
+            }
+        },
+        "img": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "img",
+            "fullname": "img",
+            "type": null,
+            "data_type": "text",
+            "texts": null
+        }
+    },
+    "unique_slug": true,
+    "relations": {
+        "children": [
+
+        ],
+        "children_optional": [
+
+        ],
+        "parents": [
+
+        ],
+        "parents_optional": [
+
+        ],
+        "plural": [
+
+        ],
+        "hidden": [
+
+        ]
+    },
+    "items_aliases": {
+        "create": "backend_content_item_create",
+        "delete": "backend_content_item_delete",
+        "update": "backend_content_item_update",
+        "sort": "backend_content_item_sort",
+        "value": "backend_content_item_value",
+        "upload": "backend_content_item_upload",
+        "uploader_post": "backend_content_item_uploader_post",
+        "one": "backend_content_item_one"
+    }
+}

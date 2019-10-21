@@ -1,0 +1,6 @@
+<include href="system/alerts/block.html"/>
+<include href="{{ @site.tpl.'/blocks/breadcrumbs.html' }}"/>
+<section class="htc__contact__area ptb--50 bg__white"><div class="container"><div class="row"><div class="col-xs-12 content">
+<check if="{{ !empty(@content) }}">{{ @content | raw }}</check>
+<include if="{{ isset(@html.inc) }}" href="{{ @html.inc }}" />
+</div></div></div></section>

@@ -1,0 +1,20 @@
+<check if="!empty(@list)">
+<div class="slider__container slider--one">
+    <div class="slider__activation__wrap owl-carousel owl-theme">
+<repeat group="@list" value="@list_node"><check if="@list_node.obj_af_img->exists()">
+        <div class="slide slider__full--screen slider-height-inherit slider-text-right" style="background: rgba(0, 0, 0, 0) url({{ @list_node.obj_af_img->src() }}) no-repeat; background-size: cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="slider__inner">
+<check if="!empty(@list_node.af_text)"><h1>{{ @list_node.title }} <span class="text--theme">{{ @list_node.af_text | raw }}</span></h1></check>
+<check if="!empty(@list_node.af_link)"><div class="slider__btn"><a class="htc__btn" href="{{ @list_node.af_link }}">{{ !empty(@list_node.af_btn)?@list_node.af_btn:'Подробнее' }}</a></div></check>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</check></repeat>
+    </div>
+</div>
+</check>

@@ -1,0 +1,102 @@
+<include href="admin/blocks/scripts.html"/>
+<div class="category-menu-list"><ul><repeat group="@MENUS.catalog" value="@item">
+    <li><a href="{{ 'frontend_tovar_list', @item | alias }}">{{ @item.title }}</a></li>
+</repeat></ul></div>
+<section class="htc__product__details product-details-style2 pt--120 pb--100 bg__white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
+                <div class="product__details__container">
+                    <div class="product__big__images">
+                        <div class="portfolio-full-image tab-content">
+                                <check if="{{ isset(@list_event.content.show.0.image) }}">
+                                    <div>
+                                        <img src="https://barnaul.kassy.ru/media/{{@list_event.content.show.0.image}}"
+                                             alt="{{@list_event.content.show.0.title}}">
+                                        <p>{{ @list_event.content.show.0.descr | raw }}</p>
+                                    </div>
+                                </check>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 smt-30 xmt-30">
+                <div class="htc__product__details__inner">
+                    <check if="{{ count(@list_event.content.event) == 1 }}">
+                        <true>
+                            <repeat group="@list_event.content.event" value="@event">
+                                <ul class="pro__dtl__prize" style="margin-top: 0">
+                                    <check if="@event.vacancies > 0">
+                                        <true>
+                                            <li>{{ @event.price_min }} руб.</li>
+                                            <li>&nbsp;-&nbsp;</li>
+                                            <li>{{ @event.price_max }} руб.</li>
+                                        </true>
+                                        <false>
+                                            <li>Все билеты проданы</li>
+                                        </false>
+                                    </check>
+                                </ul>
+                                <h2>{{ gmdate("d.m.Y H:i", @list_event.content.event.0.date + 3600*(7) ) }}</h2>
+                                <h2>{{ @list_event.content.building.0.title }}</h2>
+                                <check if="@list_event.content.event.0.vacancies > 0">
+                                    <true>
+                                        <h2>{{ @list_event.content.event.0.vacancies }} свободных мест</h2>
+                                        <br>
+                                        <ul class="pro__dtl__btn">
+                                            <li class="buy__now__btn">
+                                                <button class="kassy_ru"
+                                                        data-kassy-agent_id="pkprof.com"
+                                                        data-kassy-db="barnaul"
+                                                        data-kassy-event_id="{{ @list_event.content.event.0.id }}">Купить</button>
+                                            </li>
+                                        </ul>
+                                    </true>
+                                </check>
+                            </repeat>
+                        </true>
+                        <false>
+                            <h2>{{ @list_event.content.building.0.title }}</h2>
+                            <br>
+                            <a href="#dates" class="btn btn-primary">Купить</a>
+                        </false>
+                    </check>
+                </div>
+            </div>
+        </div>
+        <check if="{{ count(@list_event.content.event) > 1 }}">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-condensed table-hover" id="dates" style="border: 1px solid #ddd;">
+                        <repeat group="@list_event.content.event" value="@event">
+                            <tr>
+                                <th>{{ gmdate("d.m.Y H:i", @event.date + 3600*(7)) }}</th>
+                                <check if="@event.vacancies > 0">
+                                    <true>
+                                        <td align="center" style="color: #ff4136;">{{ @event.price_min }} руб. -  {{ @event.price_max }} руб.</td>
+                                    </true>
+                                    <false>
+                                        <td align="center" style="color: #ff4136;">Все билеты проданы</td>
+                                        <td></td>
+                                        <td></td>
+                                    </false>
+                                </check>
+                                <check if="@event.vacancies > 0">
+                                    <true>
+                                        <td align="center">{{ @event.vacancies }} свободных мест</td>
+                                        <td align="right" class="buy__now__btn">
+                                            <button class="kassy_ru"
+                                                    data-kassy-agent_id="pkprof.com"
+                                                    data-kassy-db="barnaul"
+                                                    data-kassy-event_id="{{ @event.id }}">Купить</button>
+                                        </td>
+                                    </true>
+                                </check>
+                            </tr>
+                        </repeat>
+                    </table>
+                </div>
+            </div>
+        </check>
+    </div>
+</section>

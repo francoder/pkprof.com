@@ -1,0 +1,166 @@
+{
+    "namespace": "_user_profile",
+    "acl": "_user_profile",
+    "aliases": {
+        "list": "backend_content_list",
+        "list_page": "backend_content_list_page",
+        "create": "backend_content_create",
+        "delete": "backend_content_delete",
+        "edit": "backend_content_edit",
+        "update": "backend_content_update",
+        "value": "backend_content_value",
+        "labels": "backend_content_labels",
+        "move": "backend_content_move",
+        "upload": "backend_content_upload",
+        "sort": "backend_content_sort",
+        "tree_json": "backend_content_tree_json",
+        "create_sync": "backend_content_create_sync",
+        "copy": "backend_content_copy",
+        "edit_modal": "backend_content_edit_modal",
+        "point_value": "backend_content_point_value",
+        "moderation": "backend_content_moderation",
+        "moderation_controls": "backend_content_moderation_controls"
+    },
+    "view": {
+        "list_fields": "admin\/content\/fields_in_list.html",
+        "list": "admin\/content\/list.html",
+        "list_header": "admin\/content\/head.html",
+        "list_footer": "admin\/content\/footer.html",
+        "list_form": "admin\/content\/list_form.html",
+        "list_item": "admin\/content\/list_item.html",
+        "list_empty": "admin\/content\/list_empty.html",
+        "one": null,
+        "form": "admin\/content\/form.html",
+        "edit": "admin\/profile\/edit.html",
+        "perpage": 10,
+        "form_struct": null,
+        "edit_item": "system\/content\/item\/list_item.html",
+        "hide_node_link": true,
+        "icon": "fa fa-list fa-fw",
+        "list_item_actions": "admin\/content\/list_item_actions.html",
+        "edit_modal": "admin\/content\/edit_modal.html",
+        "labels": "system\/content\/labels.html",
+        "moderation_controls": "system\/content\/moderation.html"
+    },
+    "fields_in_list": [],
+    "texts": {
+        "ru": {
+            "title": "Пользователь",
+            "title_pl": "Пользователи"
+        }
+    },
+    "items": [],
+    "fields": {
+        "id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "id",
+            "fullname": "id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "user_id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "user_id",
+            "fullname": "user_id",
+            "type": null,
+            "data_type": "int(11)",
+            "texts": null
+        },
+        "title": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "title",
+            "fullname": "title",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "ФИО",
+                    "placeholder": "Петров Сергей Иванович",
+                    "hint": "Фамилия Имя Отчетство"
+                }
+            }
+        },
+        "created": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "created",
+            "fullname": "created",
+            "type": null,
+            "data_type": "timestamp",
+            "texts": null
+        },
+        "af_pkcard": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "pkcard",
+            "fullname": "af_pkcard",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Номер карты",
+                    "placeholder": "Укажите номер карты Золотая Корона"
+                }
+            }
+        },
+        "af_tel": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "tel",
+            "fullname": "af_tel",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Телефон",
+                    "placeholder": ""
+                }
+            }
+        },
+        "af_org": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "org",
+            "fullname": "af_org",
+            "type": "text",
+            "data_type": "varchar(255)",
+            "texts": {
+                "ru": {
+                    "label": "Профсоюзная организация",
+                    "placeholder": ""
+                }
+            }
+        },
+        "img": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "img",
+            "fullname": "img",
+            "type": null,
+            "data_type": "text"
+        }
+    },
+    "unique_slug": true,
+    "relations": {
+        "children": [],
+        "children_optional": [],
+        "parents": [],
+        "parents_optional": [],
+        "plural": [],
+        "hidden": []
+    },
+    "items_aliases": {
+        "create": "backend_content_item_create",
+        "delete": "backend_content_item_delete",
+        "update": "backend_content_item_update",
+        "sort": "backend_content_item_sort",
+        "value": "backend_content_item_value",
+        "upload": "backend_content_item_upload",
+        "uploader_post": "backend_content_item_uploader_post",
+        "one": "backend_content_item_one"
+    }
+}

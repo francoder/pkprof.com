@@ -1,0 +1,29 @@
+{
+    "name": "bigsiter/pkprof.com",
+    "description": "PKPROF.COM",
+    "type": "project",
+    "require": {
+        "bcosca/fatfree-core": "^3.6",
+        "blueimp/jquery-file-upload": "^9.21",
+        "ikkez/f3-pagination": "^1.4",
+        "vlucas/phpdotenv": "^2.4",
+        "ikkez/f3-assets": "dev-master",
+        "ikkez/f3-fal": "^0.7.2",
+        "ikkez/f3-schema-builder": "dev-master",
+        "voronkovich/sberbank-acquiring-client": "^1",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "files": [
+            "vendor/bigsiter/bigsiter-cms-core/src/lib/ShortCodes.php",
+            "vendor/blueimp/jquery-file-upload/server/php/UploadHandler.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Ivan Domashkin",
+            "email": "ivan@bigsiter.ru"
+        }
+    ],
+    "minimum-stability": "stable"
+}

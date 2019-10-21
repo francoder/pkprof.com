@@ -1,0 +1,20 @@
+<check if="!empty(@list)">
+<section class="htc__product__area shop__page bg__white"><div class="container"><div class="htc__product__container">
+<div class="row"><div class="product__list another-product-style">
+<repeat group="@list" value="@list_node">
+<div class="col-md-2 single__pro col-lg-2 cat--1 col-sm-4 col-xs-12">
+    <div class="product foo">
+        <div class="product__inner">
+<div class="pro__thumb"><a href="{{ 'frontend_tovar_bilety_one', @list_node | alias }}">
+<check if="!empty(@list_node.image)"><img src="http://barnaul.kassy.ru/media/{{ @list_node.image }}" alt="{{ @list_node.title }}"></check>
+</a></div>
+        </div>
+        <div class="product__details">
+            <h2><a href="{{ 'frontend_tovar_bilety_one', @list_node | alias }}">{{ @list_node.title }}</a></h2>
+        </div>
+    </div>
+</div>
+</repeat>
+</div></div>
+</div></div></section>
+</check>

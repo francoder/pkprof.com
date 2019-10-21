@@ -1,0 +1,37 @@
+<check if="!empty(@list.subset)">
+    <div class="htc__blog__area bg__white pb--120">
+        <div class="container">
+            <div class="row">
+                <div class="blog__wrap clearfix">
+                    <repeat group="{{ @list.subset }}" value="{{ @list_node }}">
+                        <div class="col-md-2 col-lg-2 col-sm-6 col-xs-12">
+                            <div class="blog foo" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+                                <div class="blog__inner">
+                                    <div class="blog__thumb">
+                                        <a href="{{ @list_node._link }}">
+                                            {~ \bs_imgtag(@list_node, 'img', 'cropEnlarge', 370, 347) ~}
+                                        </a>
+                                        <div class="blog__post__time">
+                                            <div class="post__time--inner">
+                                                <span class="date">{{ date('j',strtotime(@list_node.af_date)) }}</span>
+                                                <span class="month">{{ mb_substr(\helpers\Date::MonthName(@list_node.af_date),0,3) }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog__hover__info">
+                                        <div class="blog__hover__action">
+                                            <p class="blog__des"><a href="{{ @list_node._link }}">{{ @list_node.title }}</a></p>
+                                            {*<div class="blog__btn">
+                                                <a class="read__more__btn" href="{{ @list_node._link }}">Читать</a>
+                                            </div>*}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </repeat>
+                </div>
+            </div>
+        </div>
+    </div>
+</check>

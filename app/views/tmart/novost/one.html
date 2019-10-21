@@ -1,0 +1,38 @@
+<section class="blog-details-wrap ptb--120 bg__white">
+            <div class="container">
+                <div class="row">
+                    <div class="{{ !empty(@node.other)?'col-md-8 col-lg-8':'col-md-12 col-lg-12'}} col-sm-12 col-xs-12">
+                        <div class="blog-details-left-sidebar">
+                            <include href="{{ @site.tpl.'/novost/node.html' }}"/>
+                        </div>
+                    </div>
+                    <check if="!empty(@node.other)">
+                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 smt-30 xmt-40">
+                        <div class="blod-details-right-sidebar">
+                            <div class="our-recent-post mt--60">
+                                <h2 class="section-title-2">Последние новости</h2>
+                                <div class="our-recent-post-wrap">
+                                    <repeat group="@node.other" value="@list_node">
+                                        
+                                    <div class="single-recent-post">
+                                        <div class="recent-thumb">
+                                            <a href="{{ @list_node._link }}">{~ \bs_imgtag(@list_node, 'img', 'cropEnlarge', 60, 60) ~}</a>
+                                        </div>
+                                        <div class="recent-details">
+                                            <div class="recent-post-dtl">
+                                                <h6><a href="{{ @list_node._link }}">{{ @list_node.title }}</a></h6>
+                                            </div>
+                                            <div class="recent-post-time">
+                                                <p>{{ date('j',strtotime(@list_node.af_date)) }} {{ \helpers\Date::MonthName(@list_node.af_date) }} {{ date('Y',strtotime(@list_node.af_date)) }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </repeat>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </check>
+                </div>
+            </div>
+        </section>

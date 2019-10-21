@@ -1,0 +1,148 @@
+# php options
+php_value allow_url_fopen on
+php_value default_charset utf-8
+php_value short_open_tag Off
+php_value expose_php Off
+php_value zend.ze1_compatibility_mode off
+php_value register_argc_argv Off
+php_value register_globals Off
+php_value always_populate_raw_post_data Off
+php_value ignore_repeated_errors On
+php_value ignore_repeated_source On
+php_value session.use_cookies 1
+php_value session.use_only_cookies 0
+php_value session.use_trans_sid 0
+
+php_value upload_max_filesize 64M
+php_value memory_limit 256M
+php_value post_max_size 64M
+
+php_value sockets.use_system_read 1
+php_value default_socket_timeout 3600
+php_value max_execution_time 3600
+php_value max_input_time 3600
+php_value set_time_limit 3600
+
+php_value log_errors On
+php_value display_errors On
+php_value html_errors On
+
+
+# ----------------------------------------------------------------------
+# Блокируем некоторые эксплоиты
+# ----------------------------------------------------------------------
+## Если у вас появились проблемы, закомментируйте данные правила
+<IfModule mod_rewrite.c>
+## Запрещаем доступ к .xml файлам (раскомментируйте для активации)
+#  <Files ~ "\.xml$">
+#    Order allow,deny
+#    Deny from all
+#    Satisfy all
+#  </Files>
+## [Конец] Запрещаем доступ к .xml файлам
+  RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|\%3D) [OR]
+# Блокируем возможность посылать base64_encode через URL
+  RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [OR]
+# Блокируем передачу тега <script> через URL
+  RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+# Блокируем выставление переменной PHP GLOBALS через URL
+  RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# Блокируем возможность изменять переменную _REQUEST через URL
+  RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+# Посылаем все заблокированные запросы на домашнюю страницу с ошибкой 403 Forbidden error!
+  RewriteRule ^(.*)$ index.php [F,L]
+</IfModule>
+########### [Конец] Блокируем некоторые эксплоиты
+
+
+# ----------------------------------------------------------------------
+# Задаем Expires заголовки (срок актуальности файла) (для лучшего кэширования)
+# ----------------------------------------------------------------------
+# Указываются заголовки с большим сроком "годности",
+# предполагается, что вы используете кэш на основе названий файлов (all.css?v001).
+# В дополнение, учтите, что старые прокси могут кэшировать не верно
+#   http://www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
+
+# Если вы не используете названия файлов для контроля версий, измените кэш для CSS и JS, например на
+# "access plus 1 week".
+<IfModule mod_expires.c>
+  ExpiresActive on
+
+# Задаем значение по умолчанию (для всех файлов)
+  ExpiresDefault                          "access plus 1 month"
+
+# cache.appcache нельзя кэшировать в FF 3.6 (спасибо Remy ~Introducing HTML5)
+  ExpiresByType text/cache-manifest       "access plus 0 seconds"
+
+# Ваш html документ
+  <FilesMatch \.(html|xhtml|xml|shtml|phtml|php|txt)$>
+    ExpiresDefault "access plus 0 seconds"
+  </FilesMatch>
+  ExpiresByType text/html                 "access plus 0 seconds"
+
+# Данные
+  ExpiresByType text/xml                  "access plus 0 seconds"
+  ExpiresByType application/xml           "access plus 0 seconds"
+  ExpiresByType application/json          "access plus 0 seconds"
+
+# Рассылка
+  ExpiresByType application/rss+xml       "access plus 1 hour"
+  ExpiresByType application/atom+xml      "access plus 1 hour"
+
+# Favicon (не может быть переименован)
+  <FilesMatch \.(ico)$>
+    ExpiresDefault "access plus 1 week"
+  </FilesMatch>
+  ExpiresByType image/x-icon              "access plus 1 week"
+
+# Медиа: изображения, видео, аудио
+  <FilesMatch \.(gif|png|jpg|jpeg|ogg|mp4|mkv|flv|swf|wmv|asf|asx|wma|wax|wmx|wm)$>
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+  ExpiresByType image/gif                 "access plus 1 month"
+  ExpiresByType image/png                 "access plus 1 month"
+  ExpiresByType image/jpeg                "access plus 1 month"
+  ExpiresByType video/ogg                 "access plus 1 month"
+  ExpiresByType audio/ogg                 "access plus 1 month"
+  ExpiresByType video/mp4                 "access plus 1 month"
+  ExpiresByType video/webm                "access plus 1 month"
+
+# HTC файлы (css3pie)
+  ExpiresByType text/x-component          "access plus 1 month"
+
+# Веб-шрифты
+  <FilesMatch \.(eot|ttf|otf|svg|woff)$>
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+  ExpiresByType application/x-font-ttf    "access plus 1 month"
+  ExpiresByType font/opentype             "access plus 1 month"
+  ExpiresByType application/x-font-woff   "access plus 1 month"
+  ExpiresByType image/svg+xml             "access plus 1 month"
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+
+# CSS и JavaScript
+  <FilesMatch \.(css|js)$>
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType application/javascript    "access plus 1 year"
+
+# Статичные ресурсы
+  <FilesMatch \.(swf|pdf|doc|rtf|xls|ppt)$>
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+  ExpiresByType application/x-shockwave-flash "access plus 1 year"
+  ExpiresByType application/pdf               "access plus 1 year"
+  ExpiresByType application/msword            "access plus 1 year"
+  ExpiresByType application/rtf               "access plus 1 year"
+  ExpiresByType application/vnd.ms-excel      "access plus 1 year"
+  ExpiresByType application/vnd.ms-powerpoint "access plus 1 year"
+</IfModule>
+
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L,QSA,E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bcosca/fatfree-core" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bigsiter/bigsiter-cms-core" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/blueimp/jquery-file-upload" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ikkez/f3-assets" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ikkez/f3-fal" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ikkez/f3-pagination" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ikkez/f3-schema-builder" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/voronkovich/sberbank-acquiring-client" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

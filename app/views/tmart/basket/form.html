@@ -1,0 +1,51 @@
+<form id="order_form" action="{{ 'frontend_order' | alias }}" method="post">
+<div class="row">
+    <div class="col-md-6">
+        <div class="billing-details">
+            <h3 class="uppercase">Информация о покупателе</h3>
+            <div class="space30"></div>
+            <div class="row">
+                <div class="col-md-6">
+            <label>Email </label>
+            <input class="form-control required" name="user[email]" placeholder="mail@example.com" value="{{ @account.user.email }}" type="text" readonly="readonly">
+                </div>
+                <div class="col-md-6">
+            <label>Телeфон</label>
+            <input class="form-control required" name="user[af_tel]" placeholder="+7(999)999-99-99" value="{{ @account.user.profile.af_tel }}" type="text" readonly="readonly">
+                </div>
+            </div>
+            <div class="clearfix space20"></div>
+            <label>Фамилия Имя Отчество </label>
+            <input class="form-control" name="user[title]" placeholder="Фамилия, Имя, Отчество" value="{{ @account.user.profile.title }}" type="text" readonly="readonly">
+            <div class="clearfix space20"></div>
+            <label>Адрес доставки </label>
+            <textarea class="form-control" name="user[af_address]">{{ isset(@POST.user.af_address)?@POST.user.af_address:'' }}</textarea>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="billing-details">
+            <h3 class="uppercase">Информация о заказе</h3>
+            <div class="space30"></div>
+            <label>Способ доставки </label>
+            <select name="order[fko_delivery]" class="form-control">
+                <repeat group="{{ @delivery }}" value="{{ @d }}">
+                    <option value="{{ @d.id }}"{{ isset(@POST.order.fko_delivery) && @POST.order.fko_delivery == @d.id?' selected':'' }}>{{ @d.title }}</option>
+                </repeat>
+            </select>
+            <div class="clearfix space20"></div>
+            <label>Способ оплаты </label>
+            <select name="order[fko_payment]" class="form-control">
+                <repeat group="{{ @payment }}" value="{{ @p }}">
+                    <option value="{{ @p.id }}"{{ isset(@POST.order.fko_payment) && @POST.order.fko_payment == @p.id?' selected':'' }}>{{ @p.title }}</option>
+                </repeat>
+            </select>
+            <div class="clearfix space20"></div>
+            <label>Комментарий</label>
+            <textarea class="form-control" name="order[af_comment]">{{ isset(@POST.order.af_comment)?@POST.order.af_comment:'' }}</textarea>
+        </div>
+    </div>
+</div>
+<div class="space40"></div>
+<button type="submit" class="button btn-lg pull-right">Заказать</button>
+</form>

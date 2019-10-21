@@ -1,0 +1,9 @@
+<check if="!empty(@list)">
+<div class="banners-small-slider owl-carousel"><repeat group="@list" value="@list_node">
+<check if="@list_node.obj_af_img->exists()">
+<div class="sin-product-details-slider">
+<a href="{{ @list_node.af_link }}"><img src="{{ @list_node.obj_af_img->cropEnlarge(300,300) }}" alt="{{ @list_node.title }}" /></a>
+</div>
+</check>
+</repeat></div>
+</check>

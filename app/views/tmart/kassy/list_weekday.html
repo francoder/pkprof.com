@@ -1,0 +1,30 @@
+<check if="!empty(@list) && isset(@weekday)">
+<table class="table table-condensed table-hover" style="border: 1px solid #ddd;">
+    <repeat group="@list_event" value="@show">
+        <check if="{{ @show.is_sale AND @show.vacancies > 0 AND strftime('%u', @show.date) == @weekday }}">
+            <tr>
+                <td width="150"><img src="{{ isset(@show.image)?'https://barnaul.kassy.ru/media/'.@show.image:'/images/no_image.png' }}" width="150" alt="{{@show.title}}"></td>
+                <td>
+                    <h2>
+                        <a style="text-decoration: none" href="{{ 'frontend_tovar_bilety_one', 'id='.@show.show_id | alias }}">{{ @show.title }}</a>
+                        <small>{{ gmdate("d.m.Y H:i", @show.date + 3600*(7) ) }}</small>
+                    </h2>
+                    <check if="{{ !empty(@show.descr) }}">
+                        <p>{{ mb_substr(@show.descr, 0, mb_strpos(@show.descr, '.', 30)+1) | raw }}</p>
+                    </check>
+                </td>
+                <td style="vertical-align: bottom">
+                    <button style="position: relative; left: 40px;"
+                            class="kassy_ru"
+                            data-kassy-agent_id="pkprof.com"
+                            data-kassy-db="barnaul"
+                            data-kassy-event_id="{{ @show.id }}">Купить</button>
+                </td>
+                <td style="vertical-align: top">
+                    <span class="label label-info">{{ @show.age_rating }}</span>
+                </td>
+            </tr>
+        </check>
+    </repeat>
+</table>
+</check>

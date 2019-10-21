@@ -1,0 +1,48 @@
+<li><a href="{{ 'backend_dashboard' | alias }}"><i class="fa fa-question-circle fa-fw"></i><span>Руководство пользователя</span></a></li>
+<check if="isset(@MENUS.account.content.htmlpage) ||isset(@MENUS.account.content.novost) ||
+    isset(@MENUS.account.content.banner) || isset(@MENUS.account.content.settings)">
+    <li class="header">Сайт</li>
+    <include if="isset(@MENUS.account.content.htmlpage)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.htmlpage"/>
+    <include if="isset(@MENUS.account.content.novost)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.novost"/>
+    <include if="isset(@MENUS.account.content.banner)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.banner"/>
+    <include if="isset(@MENUS.account.content.settings)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.settings"/>
+</check>
+<check if="isset(@MENUS.account.content.order_status) || isset(@MENUS.account.content.order)">
+    <li class="header">Заказы</li>
+    <include if="isset(@MENUS.account.content.order_status)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.order_status"/>
+    <include if="isset(@MENUS.account.content.order)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.order"/>
+</check>
+<check if="isset(@MENUS.account.content.tovar) || isset(@MENUS.account.content.razdel) ||
+    isset(@MENUS.account.content.opt) || isset(@MENUS.account.content.postavschik)">
+    <li class="header">Каталог товаров</li>
+    <include if="isset(@MENUS.account.content.tovar)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.tovar"/>
+    <include if="isset(@MENUS.account.content.razdel)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.razdel"/>
+    <include if="isset(@MENUS.account.content.opt)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.opt"/>
+    <include if="isset(@MENUS.account.content.postavschik)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.postavschik"/>
+</check>
+<check if="isset(@MENUS.account.content.delivery) || isset(@MENUS.account.content.payment) ||
+    isset(@MENUS.account.content.pickpoint) || isset(@MENUS.account.content.mera)">
+    <li class="header">Справочники</li>
+    <include if="isset(@MENUS.account.content.delivery)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.delivery"/>
+    <include if="isset(@MENUS.account.content.payment)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.payment"/>
+    <include if="isset(@MENUS.account.content.pickpoint)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.pickpoint"/>
+    <include if="isset(@MENUS.account.content.mera)" href="admin/menu/menu_item.html" with="item=@MENUS.account.content.mera"/>
+</check>
+{~
+unset(@MENUS.account.content.htmlpage);
+unset(@MENUS.account.content.novost);
+unset(@MENUS.account.content.settings);
+unset(@MENUS.account.content.banner);
+unset(@MENUS.account.content.tovar);
+unset(@MENUS.account.content.tovar_sklad);
+unset(@MENUS.account.content.razdel);
+unset(@MENUS.account.content.order);
+unset(@MENUS.account.content.order_status);
+unset(@MENUS.account.content.opt);
+unset(@MENUS.account.content.postavschik);
+unset(@MENUS.account.content.delivery);
+unset(@MENUS.account.content.payment);
+unset(@MENUS.account.content.pickpoint);
+unset(@MENUS.account.content.mera);
+~}
+<include href="admin/menu/menu_items.html" with="menu_items={{ @MENUS.account.content }}"/>

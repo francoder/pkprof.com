@@ -1,0 +1,187 @@
+{
+    "namespace": "order",
+    "acl": "order",
+    "aliases": {
+        "list": "backend_content_list",
+        "list_page": "backend_content_list_page",
+        "create": "backend_content_create",
+        "create_sync": "backend_content_create_sync",
+        "copy": "backend_content_copy",
+        "delete": "backend_content_delete",
+        "edit": "backend_content_edit",
+        "edit_modal": "backend_content_edit_modal",
+        "update": "backend_content_update",
+        "value": "backend_content_value",
+        "point_value": "backend_content_point_value",
+        "labels": "backend_content_labels",
+        "moderation": "backend_content_moderation",
+        "moderation_controls": "backend_content_moderation_controls",
+        "sort": "backend_content_sort",
+        "move": "backend_content_move",
+        "tree_json": "backend_content_tree_json",
+        "upload": "backend_content_upload"
+    },
+    "items_aliases": {
+        "create": "backend_content_item_create",
+        "delete": "backend_content_item_delete",
+        "update": "backend_content_item_update",
+        "sort": "backend_content_item_sort",
+        "value": "backend_content_item_value",
+        "upload": "backend_content_item_upload",
+        "uploader_post": "backend_content_item_uploader_post",
+        "one": "backend_content_item_one"
+    },
+    "view": {
+        "list_fields": "tmart\/order\/fields_in_list.html",
+        "list_item_actions": "admin\/content\/list_item_actions.html",
+        "list": "admin\/content\/list.html",
+        "list_header": "tmart\/order\/head.html",
+        "list_footer": "admin\/content\/footer.html",
+        "list_form": "admin\/content\/list_form.html",
+        "list_item": "admin\/content\/list_item.html",
+        "list_empty": "admin\/content\/list_empty.html",
+        "one": null,
+        "form": "admin\/content\/form.html",
+        "edit": "admin\/content\/edit.html",
+        "edit_modal": "admin\/content\/edit_modal.html",
+        "edit_item": "system\/content\/item\/list_item.html",
+        "labels": "system\/content\/labels.html",
+        "moderation_controls": "system\/content\/moderation.html",
+        "hide_node_link": true,
+        "perpage": 10,
+        "icon": "fa fa-list fa-fw",
+        "form_struct": null
+    },
+    "fields_in_list": [],
+    "models": {
+        "reader": "\\models\\content\\AppOrderReader"
+    },
+    "texts": {
+        "ru": {
+            "title": "Заказ",
+            "title_pl": "Заказы"
+        }
+    },
+    "items": [],
+    "fields": {
+        "id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "id",
+            "fullname": "id",
+            "type": null,
+            "data_type": "int(11)"
+        },
+        "user_id": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "user_id",
+            "fullname": "user_id",
+            "type": null,
+            "data_type": "int(11)"
+        },
+        "created": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "created",
+            "fullname": "created",
+            "type": null,
+            "data_type": "timestamp"
+        },
+        "edited": {
+            "is_additional": false,
+            "foreign_key": false,
+            "name": "edited",
+            "fullname": "edited",
+            "type": null,
+            "data_type": "tinyint(1)"
+        },
+        "fko_order_status": {
+            "is_additional": false,
+            "foreign_key": true,
+            "name": "order_status",
+            "fullname": "fko_order_status",
+            "type": "int",
+            "data_type": "int(11)"
+        },
+        "fko_delivery": {
+            "is_additional": false,
+            "foreign_key": true,
+            "name": "delivery",
+            "fullname": "fko_delivery",
+            "type": "int",
+            "data_type": "int(11)"
+        },
+        "fko_payment": {
+            "is_additional": false,
+            "foreign_key": true,
+            "name": "payment",
+            "fullname": "fko_payment",
+            "type": "int",
+            "data_type": "int(11)"
+        },
+        "af_contacts": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "contacts",
+            "fullname": "af_contacts",
+            "type": "textarea",
+            "data_type": "text",
+            "texts": {
+                "ru": {
+                    "label": "Контакты",
+                    "placeholder": ""
+                }
+            }
+        },
+        "af_basket": {
+            "is_additional": true,
+            "foreign_key": false,
+            "name": "basket",
+            "fullname": "af_basket",
+            "type": "textarea",
+            "data_type": "text",
+            "texts": {
+                "ru": {
+                    "label": "Товары",
+                    "placeholder": ""
+                }
+            }
+        }
+    },
+    "unique_slug": true,
+    "relations": {
+        "parents": {
+            "order__fko_order_status": {
+                "name": "fko_order_status",
+                "table": "order_status",
+                "num": 1,
+                "texts": {
+                    "ru": {
+                        "label": "Статус"
+                    }
+                }
+            },
+            "order__fko_delivery": {
+                "name": "fko_delivery",
+                "table": "delivery",
+                "num": 1,
+                "texts": {
+                    "ru": {
+                        "label": "Способ доставки"
+                    }
+                }
+            },
+            "order__fko_payment": {
+                "name": "fko_payment",
+                "table": "payment",
+                "num": 1,
+                "texts": {
+                    "ru": {
+                        "label": "Способ оплаты"
+                    }
+                }
+            }
+        }
+    }
+}

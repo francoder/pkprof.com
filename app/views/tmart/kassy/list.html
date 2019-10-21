@@ -1,0 +1,57 @@
+<include href="admin/blocks/scripts.html"/>
+<div class="category-menu-list"><ul><repeat group="@MENUS.catalog" value="@item">
+    <li><a href="{{ 'frontend_tovar_list', @item | alias }}">{{ @item.title }}</a></li>
+</repeat></ul></div>
+<section class="htc__contact__area ptb--50 bg__white"><div class="container"><div class="row"><div class="col-xs-12 content">
+<include if="isset(@top_shows)" href="{{ @site.tpl.'/kassy/top.html' }}" with="list=@top_shows"/>
+        <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+            <div class="tab-content" id="myTabContent">
+            <ul class="nav nav-tabs" id="dayOfWeek" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#monday" style="text-decoration: none" id="monday-tab" role="tab" data-toggle="tab" aria-controls="monday" aria-expanded="true">Понедельник</a>
+                </li>
+                <li role="presentation">
+                    <a href="#tuesday" style="text-decoration: none" id="tuesday-tab" role="tab" data-toggle="tab" aria-controls="tuesday" aria-expanded="false">Вторник</a>
+                </li>
+                <li role="presentation">
+                    <a href="#wednesday" style="text-decoration: none" id="wednesday-tab" role="tab" data-toggle="tab" aria-controls="wednesday" aria-expanded="false">Среда</a>
+                </li>
+                <li role="presentation">
+                    <a href="#thursday" style="text-decoration: none" id="thursday-tab" role="tab" data-toggle="tab" aria-controls="thursday" aria-expanded="false">Четверг</a>
+                </li>
+                <li role="presentation">
+                    <a href="#friday" style="text-decoration: none" id="friday-tab" role="tab" data-toggle="tab" aria-controls="friday" aria-expanded="false">Пятница</a>
+                </li>
+                <li role="presentation">
+                    <a href="#saturday" style="text-decoration: none" id="saturday-tab" role="tab" data-toggle="tab" aria-controls="saturday" aria-expanded="false">Суббота</a>
+                </li>
+                <li role="presentation">
+                    <a href="#sunday" style="text-decoration: none" id="sunday-tab" role="tab" data-toggle="tab" aria-controls="sunday" aria-expanded="false">Воскресенье</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="dayOfWeekContent">
+                <div class="tab-pane fade active in" role="tabpanel" id="monday" aria-labelledby="monday-tab">
+                    <include href="{{ @site.tpl.'/kassy/list_weekday.html' }}" with="list=@list_event,weekday=1"/>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="tuesday" aria-labelledby="tuesday-tab">
+                    <include href="{{ @site.tpl.'/kassy/list_weekday.html' }}" with="list=@list_event,weekday=2"/>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="wednesday" aria-labelledby="wednesday-tab">
+                    <include href="{{ @site.tpl.'/kassy/list_weekday.html' }}" with="list=@list_event,weekday=3"/>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="thursday" aria-labelledby="thursday-tab">
+                    <include href="{{ @site.tpl.'/kassy/list_weekday.html' }}" with="list=@list_event,weekday=4"/>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="friday" aria-labelledby="friday-tab">
+                    <include href="{{ @site.tpl.'/kassy/list_weekday.html' }}" with="list=@list_event,weekday=5"/>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="saturday" aria-labelledby="saturday-tab">
+                    <include href="{{ @site.tpl.'/kassy/list_weekday.html' }}" with="list=@list_event,weekday=6"/>
+                </div>
+                <div class="tab-pane fade" role="tabpanel" id="sunday" aria-labelledby="sunday-tab">
+                    <include href="{{ @site.tpl.'/kassy/list_weekday.html' }}" with="list=@list_event,weekday=7"/>
+                </div>
+            </div>
+            </div>
+        </div>
+</div></div></div></section>
