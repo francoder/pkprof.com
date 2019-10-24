@@ -11,8 +11,8 @@ class AppKassy extends AppContent {
     protected $page_layout = 'inner';
 
     protected $api = 'https://api.kassy.ru/v3/';
-    protected $agent_id = 'pkprof.com';
-    protected $secret_key = 'f5f6a6927817fc5316889874cbeadf64';
+    protected $agent_id = 'agent_id';
+    protected $secret_key = 'secret_key';
     protected $client = null;
     protected $xml_show = '<?xml version="1.0" encoding="utf-8"?><request db="barnaul" module="table_show" format="json"><filter id="" db="" state="1" /><auth id="pkprof.com" /></request>';
     protected $xml_event = '<?xml version="1.0" encoding="utf-8"?><request db="barnaul" module="table_event" format="json"><filter id="" show_type_id="" show_id="%s" rollerman_id="" building_id="" hall_id="" date_from="%s" date_to="1561445735" is_recommend="" state="1" /><auth id="pkprof.com" /></request>';
