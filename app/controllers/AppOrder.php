@@ -13,8 +13,8 @@ class AppOrder extends Content
     protected $layout = 'layout.html';
     protected $page_layout = 'inner';
 
-    protected $username = 'pkprof-api';
-    protected $password = 'FBSPYhez{Ti5P6J4';
+    protected $username = 'username';
+    protected $password = 'password';
 
     public function listView() {
         parent::listView();
